@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Loja de Carros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> 
+</head>
+<body>
+
+    <!-- Cabeçalho (Header) -->
+    <header class="bg-black py-2">
+        <div class="container mx-auto flex items-center justify-between px-4">
+            <a href="#" class="text-white font-bold text-2xl flex items-center">
+                <img src="/Imagens/logo.webp" alt="Logo da Loja" class="h-8 mr-2">
+                Paulo Veículos
+            </a>
+            <nav>
+                <ul class="flex space-x-6 text-white">
+                    <li><a href="#sobre" class="hover:text-gray-300">Sobre Nós</a></li>
+                    <li><a href="#destaques" class="hover:text-gray-300">Carros em Destaque</a></li>
+                    <li><a href="#ofertas" class="hover:text-gray-300">Ofertas Especiais</a></li>
+                    <li><a href="#depoimentos" class="hover:text-gray-300">Depoimentos</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center">
+                <a href="https://wa.me/5527997356397" class="text-white mr-4 hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                      </svg> Whatsapp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-cover bg-center py-24" style="background-image: url(/Imagens/carros-esportivos-cor-e-unidade.webp);">
+        <div class="container mx-auto text-center text-white px-4">
+            <h1 class="text-5xl font-bold mb-4">ENCONTRE O CARRO DOS SEUS SONHOS</h1>
+            <p class="text-lg mb-8">Variedade, qualidade e as melhores condições você encontra aqui!</p>
+            <a href="#destaques" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md">Explore Nossos Carros</a>
+        </div>
+    </section>
+
+    <!-- Sobre a Loja -->
+    <section id="sobre" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">SOBRE NÓS</h2>
+                    <p class="text-gray-700">Há mais de 10 anos no mercado, a Loja Paulo Veículos oferece aos seus clientes um atendimento personalizado, 
+                        carros de alta qualidade e procedência, além de condições especiais de pagamento. Nossa missão é realizar sonhos e conectar pessoas à liberdade.</p>
+                </div>
+                <div>
+                    <img src="/Imagens/2.webp" alt="Sobre a Loja" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carros em Destaque -->
+    <section id="destaques" class="py-12">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-8">CARROS EM DESTAQUES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/Clio.webp" alt="Clio" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/Fox.webp" alt="Fox" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/Honda.webp" alt="Honda" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/Honda_City.webp" alt="Honda City" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/Voyage.webp" alt="Voyage" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/Siena.webp" alt="Siena" class="w-full"> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas Especiais -->
+    <section id="ofertas" class="bg-black py-12">
+        <div class="container mx-auto text-center text-white px-4">
+            <h2 class="text-3xl font-bold mb-8">OFERTAS ESPECIAIS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/CG.webp" alt="CG" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/CB300.webp" alt="CB300" class="w-full"> </div>
+            </div>
+        </div>
+    </section>
+    <!-- Depoimentos de Clientes -->
+    <section id="depoimentos" class="py-12">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-8">DEPOIMENTOS DOS CLIENTES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/ava1.webp"Depoimento 1" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/ava2.webp" alt="Depoimento 2" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/ava3.webp" alt="Depoimento 3" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/ava4.webp" alt="Depoimento 4" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/ava5.webp" alt="Depoimento 5" class="w-full"> </div>
+                <div class="rounded-lg shadow-md"> <img src="/Imagens/ava6.webp" alt="Depoimento 6" class="w-full"> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">COMO FUNCIONA</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FORMAS DE PAGAMENTO</h3>
+                    <li>Trabalhamos com cartão de crédito até 24x</li>
+                    <li>Realizamos financiamento bancário no Banco BV</li>
+                    <li>Realizamos financiamento bancário no Banco PAN</li>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">GARANTIA</h3>
+                    <p>Para mais informações sobre o veículo que você está interessado, entre em contato conosco via WhatsApp. Nossa equipe está pronta para fornecer todos os detalhes e tirar suas dúvidas.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">CARRO REVISADO</h3>
+                    <p>Visite nossa loja para ver o carro pessoalmente. Garantimos que todos os nossos veículos passam por uma rigorosa revisão para assegurar a qualidade e o desempenho.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-black py-6">
+        <div class="container mx-auto text-center text-white px-4">
+            <div>
+                <div class="text-center">
+                    <h4 class="font-bold mb-4">ENDEREÇO</h4>
+                    <p class="text-center">Rua jucati, 250 - Vila Vilha - Espirito Santo/ES</p>
+                </div>
+            </div>
+            <p class="mt-8">© 2024 Paulo Veículos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
