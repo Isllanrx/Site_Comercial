@@ -6,7 +6,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 header {
@@ -28,17 +27,16 @@ header {
 }
 
 /* Cabeçalho (Header) */
-.h-8 {
+.logo {
   height: 70px;
   width: 70px;
   border-radius: 50px;
 }
 
 /* Estilo para o botão do menu */
-
 #mobile-menu-button {
   padding: 10px;
-  background-color: transparent;
+  background: none;
   border: none;
   cursor: pointer;
 }
@@ -46,6 +44,7 @@ header {
 #mobile-menu-button svg {
   fill: white;
 }
+
 /* Estilo para o menu lateral */
 #mobile-menu {
   z-index: 10;
@@ -64,10 +63,6 @@ header {
 /* Seções */
 section {
   padding: 3rem 0;
-}
-
-.text-gray-700 {
-  font-size: large;
 }
 
 /* Rodapé (Footer) */
@@ -91,14 +86,8 @@ footer {
     font-size: 2rem;
   }
 
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
+  .grid-cols-1,
+  .md\:grid-cols-2,
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -119,4 +108,9 @@ footer {
   nav li {
     margin-bottom: 0.5rem;
   }
+}
+
+/* Estilos para a classe text-gray-700 */
+.text-gray-700 {
+  font-size: large;
 }
