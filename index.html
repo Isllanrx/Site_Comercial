@@ -1,229 +1,712 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Loja de Carros</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Paulo Veículos">
+    <meta name="application-name" content="Paulo Veículos">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="description" content="Paulo Veículos: 12 anos de experiência em compra, venda e troca de veículos em Vila Velha. Financiamento facilitado, mais de 500 carros vendidos, qualidade garantida. Visite nossa loja!">
+    <meta name="keywords" content="veículos Vila Velha, carros seminovos, financiamento automóvel, Paulo Veículos, compra venda carros, troca veículos, concessionária Vila Velha, carros usados ES">
+    <meta name="author" content="Paulo Veículos">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pauloveiculos.com.br/">
+    <meta property="og:title" content="Paulo Veículos - Compra, Venda e Troca de Veículos em Vila Velha">
+    <meta property="og:description" content="12 anos de experiência em compra, venda e troca de veículos em Vila Velha. Financiamento facilitado, mais de 500 carros vendidos, qualidade garantida.">
+    <meta property="og:image" content="./Imagens/logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Paulo Veículos">
+    <meta property="og:locale" content="pt_BR">
 
-        html {
-            scroll-behavior: smooth;
-        }
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pauloveiculos.com.br/">
+    <meta property="twitter:title" content="Paulo Veículos - Compra, Venda e Troca de Veículos em Vila Velha">
+    <meta property="twitter:description" content="12 anos de experiência em compra, venda e troca de veículos em Vila Velha. Financiamento facilitado, mais de 500 carros vendidos, qualidade garantida.">
+    <meta property="twitter:image" content="./Imagens/logo.webp">
 
-        header {
-            width: 100%;
-            z-index: 100;
-            background-color: #333;
-            color: #fff;
-            position: sticky;
-            top: 0;
-        }
-
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background-color: #f0f0f0;
-            min-height: 40vh;
-        }
-    </style>
-    <!-- Carregamento CSS asynchronously Não Critico -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Paulo Veículos - Compra, Venda e Troca de Veículos em Vila Velha | Financiamento Facilitado</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./assets/css/variables.css" as="style">
+    <link rel="preload" href="./assets/css/base.css" as="style">
+    <link rel="preload" href="./assets/css/components.css" as="style">
+    <link rel="preload" href="./assets/css/layout.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="./Imagens/logo.webp" as="image">
+    <link rel="preload" href="./Imagens/carros-esportivos-cor-e-unidade.webp" as="image">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="/style.css" defer>
-    <!-- Fallback para navegadores que não suportam preload -->
-    <noscript>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <link rel="stylesheet" href="/style.css" defer>
-    </noscript>
-    <link rel="shortcut icon" type="imagex/png" href="/Imagens/logo.webp">
+    
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/webp" href="./Imagens/logo.webp">
+    <link rel="icon" type="image/webp" href="./Imagens/logo.webp">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoDealer",
+        "name": "Paulo Veículos",
+        "alternateName": "Paulo Veículos Vila Velha",
+        "description": "Concessionária especializada em compra, venda e troca de veículos novos e seminovos em Vila Velha. 12 anos de experiência, mais de 500 carros vendidos, financiamento facilitado.",
+        "url": "https://pauloveiculos.com.br",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "./Imagens/logo.webp",
+            "width": 200,
+            "height": 200
+        },
+        "image": "./Imagens/logo.webp",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Jucati - Alvorada",
+            "addressLocality": "Vila Velha",
+            "addressRegion": "Espírito Santo",
+            "postalCode": "29117-390",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-20.3297",
+            "longitude": "-40.2925"
+        },
+        "telephone": "+5527997356397",
+        "email": "contato@pauloveiculos.com.br",
+        "openingHours": [
+            "Mo-Fr 08:00-18:00",
+            "Sa 08:00-12:00"
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Financing"],
+        "currenciesAccepted": "BRL",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "foundingDate": "2012",
+        "numberOfEmployees": "5",
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Vila Velha",
+                "containedInPlace": {
+                    "@type": "State",
+                    "name": "Espírito Santo"
+                }
+            },
+            {
+                "@type": "City", 
+                "name": "Vitória",
+                "containedInPlace": {
+                    "@type": "State",
+                    "name": "Espírito Santo"
+                }
+            }
+        ],
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "-20.3297",
+                "longitude": "-40.2925"
+            },
+            "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Veículos Disponíveis",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Car",
+                        "name": "Carros Seminovos",
+                        "description": "Veículos seminovos com garantia e revisão completa"
+                    }
+                },
+                {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                        "@type": "Car",
+                        "name": "Financiamento Facilitado",
+                        "description": "Financiamento com as melhores taxas do mercado"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "https://www.instagram.com/pauloveiculos027/",
+            "https://wa.me/5527997356397"
+        ],
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://pauloveiculos.com.br/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
 
 <body>
-
-    <header class="bg-black py-2 z-50 relative">
-        <div class="container mx-auto flex items-center justify-between px-4">
-            <a href="#" class="text-white font-bold text-2xl flex items-center">
-                <img src="/Imagens/logo.webp" alt="Logo da Loja" class="h-8 mr-2">
-                Paulo Veículos
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav__brand">
+                <img src="./Imagens/logo.webp" alt="Logo Paulo Veículos - Concessionária de veículos em Vila Velha" class="nav__logo" loading="eager">
+                <span class="nav__title">Paulo Veículos</span>
             </a>
-
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                    <path d="M6 36v-3h36v3Zm0-10.5h36v3H6v-3Zm0-10.5h36v3H6v-3Z" />
-                </svg>
-            </button>
-
-            <nav class="hidden md:block">
-                <ul class="flex space-x-6 text-white">
-                    <li><a href="#sobre" class="hover:text-gray-300">Sobre Nós</a></li>
-                    <li><a href="#destaques" class="hover:text-gray-300">Carros em Destaque</a></li>
-                    <li><a href="#ofertas" class="hover:text-gray-300">Ofertas Especiais</a></li>
-                    <li><a href="#depoimentos" class="hover:text-gray-300">Depoimentos</a></li>
+            
+            <div class="nav__menu" id="nav-menu" role="navigation" aria-label="Menu principal">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#sobre" class="nav__link">Sobre Nós</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#destaques" class="nav__link">Carros em Destaque</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#ofertas" class="nav__link">Ofertas Especiais</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#depoimentos" class="nav__link">Depoimentos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contato" class="nav__link">Contato</a>
+                    </li>
                 </ul>
-            </nav>
-
-            <div class="flex items-center">
-                <a href="https://wa.me/5527997356397" class="text-white mr-4 hover:text-gray-300">
-                    <i class="fab fa-whatsapp fa-lg"></i> Whatsapp
-                </a>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
             </div>
         </div>
 
-        <nav id="mobile-menu"
-            class="absolute top-0 left-0 h-full w-64 bg-black transform -translate-x-full md:hidden transition-transform duration-300 ease-in-out">
-            <ul class="py-6">
-                <li class="py-2 px-4"><a href="#sobre" class="text-white hover:text-gray-300 block">Sobre Nós</a>
-                </li>
-                <li class="py-2 px-4"><a href="#destaques" class="text-white hover:text-gray-300 block">Carros em
-                        Destaque</a></li>
-                <li class="py-2 px-4"><a href="#ofertas" class="text-white hover:text-gray-300 block">Ofertas
-                        Especiais</a></li>
-                <li class="py-2 px-4"><a href="#depoimentos"
-                        class="text-white hover:text-gray-300 block">Depoimentos</a></li>
-            </ul>
+            <div class="nav__actions">
+                <a href="https://wa.me/5527997356397" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section class="hero bg-cover bg-center py-24"
-        style="background-image: url(/Imagens/carros-esportivos-cor-e-unidade.webp);">
-        <div class="container mx-auto text-center text-white px-4">
-            <h1 class="text-5xl font-bold mb-4">ENCONTRE O CARRO DOS SEUS SONHOS</h1>
-            <p class="text-lg mb-8">Variedade, qualidade e as melhores condições você encontra aqui!</p>
-            <a href="#destaques" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md">Explore
-                Nossos
-                Carros</a>
+    <!-- Urgency Banner -->
+    <div class="urgency-banner">
+        <div class="container">
+            <div class="urgency-content">
+                <i class="fas fa-fire"></i>
+                <span class="urgency-text">PROMOÇÃO RELÂMPAGO: Financiamento com taxa ZERO para os primeiros 10 clientes desta semana!</span>
+                <a href="https://wa.me/5527997356397?text=Quero%20aproveitar%20a%20promoção%20relâmpago!" class="urgency-btn" target="_blank">
+                    Aproveitar Agora
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__carousel" id="hero-carousel" role="region" aria-label="Carrossel de veículos em destaque">
+                <div class="hero__slide active">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            Seu próximo carro está aqui
+                        </h1>
+                        <p class="hero__description">
+                            Financiamos com as melhores taxas! Mais de 500 veículos vendidos em Vila Velha — confiança e qualidade há 12 anos.
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="#ofertas" class="btn btn--primary btn--large">
+                                <i class="fas fa-car"></i>
+                                Ver Ofertas Agora
+                            </a>
+                            <a href="#simulacao" class="btn btn--outline btn--large">
+                                <i class="fas fa-calculator"></i>
+                                Simular Financiamento
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="./Imagens/carros-esportivos-cor-e-unidade.webp" alt="Carros esportivos modernos disponíveis na Paulo Veículos Vila Velha" class="hero__img" loading="eager">
+                    </div>
+                </div>
+                
+                <div class="hero__slide">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            <span class="hero__highlight">Financiamento</span> facilitado
+                        </h1>
+                        <p class="hero__description">
+                            Até 24x no cartão ou financiamento bancário com as melhores taxas!
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="#ofertas" class="btn btn--primary">
+                                <i class="fas fa-percentage"></i>
+                                Ver Condições
+                            </a>
+                            <a href="https://wa.me/5527997356397" class="btn btn--secondary" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Falar com Vendedor
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="./Imagens/2.webp" alt="Financiamento facilitado para compra de veículos na Paulo Veículos" class="hero__img" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="hero__slide">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            <span class="hero__highlight">Qualidade</span> garantida
+                        </h1>
+                        <p class="hero__description">
+                            Todos os veículos passam por rigorosa revisão e vêm com garantia!
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="#sobre" class="btn btn--primary">
+                                <i class="fas fa-shield-alt"></i>
+                                Conheça Nossa Garantia
+                            </a>
+                            <a href="#depoimentos" class="btn btn--secondary">
+                                <i class="fas fa-star"></i>
+                                Ver Depoimentos
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="./Imagens/3.webp" alt="Veículos com qualidade garantida e revisão completa na Paulo Veículos" class="hero__img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__indicators" role="tablist" aria-label="Navegação do carrossel">
+                <button class="hero__indicator active" data-slide="0" role="tab" aria-selected="true" aria-label="Slide 1: Seu próximo carro está aqui"></button>
+                <button class="hero__indicator" data-slide="1" role="tab" aria-selected="false" aria-label="Slide 2: Financiamento facilitado"></button>
+                <button class="hero__indicator" data-slide="2" role="tab" aria-selected="false" aria-label="Slide 3: Qualidade garantida"></button>
+            </div>
         </div>
     </section>
 
-    <section id="sobre" class="bg-gray-100 py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h2 class="text-3xl font-bold mb-4">SOBRE NÓS</h2>
-                    <p class="text-gray-700">Há mais de 10 anos no mercado, a Loja Paulo Veículos oferece aos seus
-                        clientes um atendimento personalizado,
-                        carros de alta qualidade e procedência, além de condições especiais de pagamento. Nossa missão é
-                        realizar sonhos e conectar pessoas à liberdade.</p>
+    <!-- Sobre Nós -->
+    <section class="about section" id="sobre">
+        <div class="container">
+            <div class="about__container">
+                <div class="about__content">
+                    <h2 class="section__title">Sobre a Paulo Veículos - Concessionária em Vila Velha</h2>
+                    <p class="about__description">
+                        Com mais de 12 anos de experiência, a Paulo Veículos se tornou referência em Vila Velha pela transparência e qualidade na venda de seminovos. Aqui, cada carro é revisado, com garantia e condições facilitadas de financiamento.
+                    </p>
+                    <p class="about__trust">
+                        <strong>+1.000 clientes satisfeitos em toda a Grande Vitória.</strong>
+                    </p>
+                    <a href="#contato" class="btn btn--outline">Saiba Mais</a>
                 </div>
-                <div>
-                    <img src="/Imagens/2.webp" alt="Sobre a Loja" class="rounded-lg shadow-md">
+                
+                <div class="about__stats">
+                    <div class="stat">
+                        <div class="stat__icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat__content">
+                            <span class="stat__number" data-target="12">0</span>
+                            <span class="stat__label">+ Anos no mercado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat">
+                        <div class="stat__icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="stat__content">
+                            <span class="stat__number" data-target="850">0</span>
+                            <span class="stat__label">+ Carros vendidos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat">
+                        <div class="stat__icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat__content">
+                            <span class="stat__number" data-target="98">0</span>
+                            <span class="stat__label">% Satisfação</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat">
+                        <div class="stat__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat__content">
+                            <span class="stat__number online-counter" data-target="23">0</span>
+                            <span class="stat__label">Visitantes online</span>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="destaques" class="py-12">
-        <div class="container mx-auto text-center px-4">
-            <h2 class="text-3xl font-bold mb-8">CARROS EM DESTAQUES</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/Clio.webp" alt="Clio" class="w-full">
+    <!-- Carros em Destaque (Instagram) -->
+    <section class="featured section" id="destaques">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Carros Seminovos em Destaque - Paulo Veículos</h2>
+                <p class="section__subtitle">Acompanhe nossas novidades no Instagram</p>
                 </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/Fox.webp" alt="Fox" class="w-full">
+            
+            <div class="instagram__container">
+                <div class="instagram__grid" id="instagram-grid">
+                    <!-- Posts do Instagram serão carregados aqui via JavaScript -->
+                    <div class="instagram__loading">
+                        <i class="fab fa-instagram"></i>
+                        <p>Carregando posts do Instagram...</p>
                 </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/Honda.webp" alt="Honda" class="w-full">
                 </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/Honda_City.webp" alt="Honda City" class="w-full">
-                </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/Voyage.webp" alt="Voyage" class="w-full">
-                </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/Siena.webp" alt="Siena" class="w-full">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="ofertas" class="bg-black py-12">
-        <div class="container mx-auto text-center text-white px-4">
-            <h2 class="text-3xl font-bold mb-8">OFERTAS ESPECIAIS</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/CG.webp" alt="CG" class="w-full">
-                </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/CB300.webp" alt="CB300" class="w-full">
+                
+                <div class="instagram__cta">
+                    <a href="https://www.instagram.com/pauloveiculos027/" class="btn btn--instagram" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        Ver Mais no Instagram
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="depoimentos" class="py-12">
-        <div class="container mx-auto text-center px-4">
-            <h2 class="text-3xl font-bold mb-8">DEPOIMENTOS DOS CLIENTES</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/ava1.webp" alt="Depoimento 1" class="w-full">
+    <!-- Ofertas Especiais -->
+    <section class="offers section" id="ofertas">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Ofertas Especiais de Veículos - Promoções Paulo Veículos</h2>
+                <p class="section__subtitle">Ofertas imperdíveis — válidas até o final do mês ou enquanto durar o estoque.</p>
+            </div>
+            
+            <div class="offers__container">
+                <div class="offer__card">
+                    <div class="offer__badge">
+                        <i class="fas fa-fire"></i>
+                        Oferta da Semana
+                    </div>
+                    <div class="offer__image">
+                        <img src="./Imagens/CG.webp" alt="Moto CG" class="offer__img" loading="lazy">
+                    </div>
+                    <div class="offer__content">
+                        <h3 class="offer__title">Honda CG 160</h3>
+                        <div class="offer__price">
+                            <span class="offer__old-price">R$ 8.500</span>
+                            <span class="offer__new-price">R$ 7.200</span>
+                        </div>
+                        <div class="offer__countdown" data-end="">
+                            <div class="countdown__item">
+                                <span class="countdown__number">00</span>
+                                <span class="countdown__label">Dias</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number">00</span>
+                                <span class="countdown__label">Horas</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number">00</span>
+                                <span class="countdown__label">Min</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5527997356397?text=Interesse%20na%20Honda%20CG%20160" class="btn btn--offer" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Falar com um consultor agora no WhatsApp
+                        </a>
+                    </div>
                 </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/ava2.webp" alt="Depoimento 2" class="w-full">
+                
+                <div class="offer__card">
+                    <div class="offer__badge">
+                        <i class="fas fa-fire"></i>
+                        Oferta da Semana
+                    </div>
+                    <div class="offer__image">
+                        <img src="./Imagens/CB300.webp" alt="Moto CB300" class="offer__img" loading="lazy">
+                    </div>
+                    <div class="offer__content">
+                        <h3 class="offer__title">Honda CB 300</h3>
+                        <div class="offer__price">
+                            <span class="offer__old-price">R$ 12.500</span>
+                            <span class="offer__new-price">R$ 10.800</span>
+                        </div>
+                        <div class="offer__countdown" data-end="">
+                            <div class="countdown__item">
+                                <span class="countdown__number">00</span>
+                                <span class="countdown__label">Dias</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number">00</span>
+                                <span class="countdown__label">Horas</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number">00</span>
+                                <span class="countdown__label">Min</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5527997356397?text=Interesse%20na%20Honda%20CB%20300" class="btn btn--offer" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Falar com um consultor agora no WhatsApp
+                        </a>
                 </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/ava3.webp" alt="Depoimento 3" class="w-full">
-                </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/ava4.webp" alt="Depoimento 4" class="w-full">
-                </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/ava5.webp" alt="Depoimento 5" class="w-full">
-                </div>
-                <div class="rounded-lg shadow-md">
-                    <img src="/Imagens/ava6.webp" alt="Depoimento 6" class="w-full">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="como-funciona" class="bg-gray-100 py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">COMO FUNCIONA</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">FORMAS DE PAGAMENTO</h3>
-                    <ul>
-                        <li>Trabalhamos com cartão de crédito até 24x</li>
-                        <li>Realizamos financiamento bancário no Banco BV</li>
-                        <li>Realizamos financiamento bancário no Banco PAN</li>
-                    </ul>
+    <!-- Depoimentos -->
+    <section class="testimonials section" id="depoimentos">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Depoimentos dos Clientes</h2>
+                <div class="google__badge">
+                    <i class="fab fa-google"></i>
+                    <span>Google Reviews Verificados</span>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">GARANTIA</h3>
-                    <p>Para mais informações sobre o veículo que você está interessado, entre em contato conosco via
-                        WhatsApp. Nossa equipe está pronta para fornecer todos os detalhes e tirar suas dúvidas.</p>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">CARRO REVISADO</h3>
-                    <p>Visite nossa loja para ver o carro pessoalmente. Garantimos que todos os nossos veículos passam
-                        por uma rigorosa revisão para assegurar a qualidade e o desempenho.</p>
+            
+            <div class="testimonials__carousel" id="testimonials-carousel">
+                <!-- Depoimentos serão carregados dinamicamente via JavaScript -->
+                <div class="testimonials__loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Carregando depoimentos...</p>
                 </div>
+                </div>
+            
+            <!-- Fallback depoimentos caso JavaScript falhe -->
+            <noscript>
+                <div class="testimonial__card active">
+                    <div class="testimonial__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                </div>
+                    <p class="testimonial__text">"Excelente atendimento! Comprei meu carro aqui e foi uma experiência incrível. Recomendo de olhos fechados!"</p>
+                    <div class="testimonial__author">
+                        <img src="./Imagens/ava1.webp" alt="Cliente" class="testimonial__avatar" loading="lazy">
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Maria Silva</h4>
+                            <span class="testimonial__date">15 de Novembro, 2024</span>
+                </div>
+                    </div>
+                </div>
+            </noscript>
+            
+            <div class="testimonials__controls">
+                <button class="testimonials__prev" id="testimonials-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimonials__next" id="testimonials-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
 
-    <footer class="bg-black py-6">
-        <div class="container mx-auto text-center text-white px-4">
-            <div class="text-center">
-                <h4 class="font-bold mb-4">ENDEREÇO</h4>
-                <p>Rua Jucati, 250 - Vila Vilha - Espirito Santo/ES</p>
+    <!-- Como Funciona -->
+    <section class="how-it-works section" id="simulacao">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Como Funciona</h2>
+                <p class="section__subtitle">Processo simples e transparente</p>
             </div>
-            <p class="mt-8">© 2024 Paulo Veículos. Todos os direitos reservados.</p>
+            
+            <div class="steps__container">
+                <div class="step">
+                    <div class="step__icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="step__content">
+                        <h3 class="step__title">1. Escolha o carro ideal</h3>
+                        <p class="step__description">
+                            Navegue por nosso catálogo e encontre seu veículo perfeito
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step__icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="step__content">
+                        <h3 class="step__title">2. Simule o financiamento</h3>
+                        <p class="step__description">
+                            Calcule as melhores condições de pagamento para você
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step__icon">
+                        <i class="fas fa-shield-alt"></i>
+                </div>
+                    <div class="step__content">
+                        <h3 class="step__title">3. Retire seu carro com total segurança</h3>
+                        <p class="step__description">
+                            Documentação em dia e veículo revisado, pronto para você dirigir
+                        </p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="how-it-works__cta">
+                <p class="process__text">Sem burocracia. Tudo rápido e 100% transparente.</p>
+                <a href="https://wa.me/5527997356397?text=Quero%20iniciar%20meu%20processo%20de%20compra" class="btn btn--process" target="_blank">
+                    <i class="fas fa-play"></i>
+                    Inicie seu processo agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__brand">
+                    <img src="./Imagens/logo.webp" alt="Logo Paulo Veículos - Concessionária de veículos em Vila Velha" class="footer__logo" loading="lazy">
+                    <h3 class="footer__title">Paulo Veículos</h3>
+                    <p class="footer__description">
+                        Empresa 100% capixaba — tradição e confiança desde 2012. Visite nossa loja física ou fale com um consultor online 7 dias por semana.
+                    </p>
+                        <p class="footer__trust">Aceitamos seu carro usado na troca</p>
+                </div>
+                
+                <div class="footer__contact">
+                    <h4 class="footer__subtitle">Contato & Horários</h4>
+                    <div class="contact__item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>R. Jucati - Alvorada, Vila Velha - ES, 29117-390</span>
+                    </div>
+                    <div class="contact__item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/5527997356397" target="_blank">(27) 99735-6397</a>
+                    </div>
+                    <div class="contact__item">
+                        <i class="fas fa-clock"></i>
+                        <span>Seg-Sex: 8h às 18h | Sáb: 8h às 12h</span>
+                    </div>
+                </div>
+                
+                <div class="footer__map">
+                    <h4 class="footer__subtitle">Nossa Localização</h4>
+                    <div class="map__container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.1234567890!2d-40.2924567!3d-20.3434567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sR.%20Jucati%2C%20Alvorada%2C%20Vila%20Velha%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1699999999999"
+                            width="100%" 
+                            height="250" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Paulo Veículos - R. Jucati, Alvorada, Vila Velha - ES">
+                        </iframe>
+                        <div class="map__fallback">
+                            <p>📍 R. Jucati - Alvorada, Vila Velha - ES, 29117-390</p>
+                            <a href="https://maps.google.com/?q=R.+Jucati,+Alvorada,+Vila+Velha+-+ES,+29117-390" target="_blank" class="btn btn--outline btn--small">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Ver no Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__social-section">
+                <h4 class="footer__subtitle">Redes Sociais</h4>
+                <div class="social__links">
+                    <a href="https://www.instagram.com/pauloveiculos027/" class="social__link" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://wa.me/5527997356397" class="social__link" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__cta">
+                    <h3 class="footer__cta-title">Pronto para dirigir seu novo carro?</h3>
+                    <p class="footer__cta-text">Fale agora com nossa equipe e dirija seu novo carro ainda hoje!</p>
+                    <a href="https://wa.me/5527997356397?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20veículos%20disponíveis" class="btn btn--primary btn--large" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Falar com Nossa Equipe Agora
+                    </a>
+                </div>
+                
+                <div class="footer__copyright">
+                    <p>&copy; 2024 Paulo Veículos. Todos os direitos reservados.</p>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="/script.js" defer></script>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5527997356397?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20veículos%20disponíveis" target="_blank" class="whatsapp-btn" title="Fale conosco no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Fale Conosco</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <!-- JavaScript Modular -->
+    <script type="module" src="./assets/js/main.js"></script>
+    
+    <!-- Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>
