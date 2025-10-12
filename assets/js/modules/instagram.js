@@ -12,42 +12,42 @@ class InstagramManager {
     this.posts = [
       {
         id: 1,
-        image: './Imagens/Honda_City.webp',
+        image: '/Imagens/Honda_City.webp',
         caption: 'Honda City 2020 — IPVA Pago, 1 Ano de Garantia',
         badge: 'Revisado',
         link: INSTAGRAM_CONFIG.baseUrl
       },
       {
         id: 2,
-        image: './Imagens/Fox.webp',
+        image: '/Imagens/Fox.webp',
         caption: 'Fox 2019 — Revisado + Baixa Quilometragem',
         badge: 'Revisado',
         link: INSTAGRAM_CONFIG.baseUrl
       },
       {
         id: 3,
-        image: './Imagens/Voyage.webp',
+        image: '/Imagens/Voyage.webp',
         caption: 'Voyage 2018 — Completo + Multimídia + Econômico',
         badge: 'Revisado',
         link: INSTAGRAM_CONFIG.baseUrl
       },
       {
         id: 4,
-        image: './Imagens/Clio.webp',
+        image: '/Imagens/Clio.webp',
         caption: 'Clio 2020 — Completo + Ar Condicionado',
         badge: 'Revisado',
         link: INSTAGRAM_CONFIG.baseUrl
       },
       {
         id: 5,
-        image: './Imagens/Siena.webp',
+        image: '/Imagens/Siena.webp',
         caption: 'Siena 2019 — Documentação em dia + Revisado',
         badge: 'Revisado',
         link: INSTAGRAM_CONFIG.baseUrl
       },
       {
         id: 6,
-        image: './Imagens/Honda.webp',
+        image: '/Imagens/Honda.webp',
         caption: 'Honda Civic 2021 — Novo + Garantia de Fábrica',
         badge: 'Revisado',
         link: INSTAGRAM_CONFIG.baseUrl
@@ -100,7 +100,7 @@ class InstagramManager {
         <div class="instagram__post" data-post-id="fallback">
           <div class="instagram__image">
             <div class="car__badge">Revisado</div>
-            <img src="./Imagens/logo.webp" alt="Veículo disponível" loading="lazy">
+            <img src="/Imagens/logo.webp" alt="Veículo disponível" loading="lazy">
             <div class="instagram__overlay">
               <div class="car__info">
                 <a href="https://wa.me/5527997356397" target="_blank" rel="noopener" class="car__whatsapp">
@@ -137,7 +137,7 @@ class InstagramManager {
         <div class="instagram__post" data-post-id="${post.id}">
           <div class="instagram__image">
             <div class="car__badge">${post.badge}</div>
-            <img src="${post.image}" alt="${post.caption}" loading="lazy" onerror="this.src='./Imagens/logo.webp'; this.onerror=null;" onload="console.log('Imagem carregada:', this.src);">
+            <img src="${post.image}" alt="${post.caption}" loading="lazy" onerror="this.src='/Imagens/logo.webp'; this.onerror=null;" onload="console.log('Imagem carregada:', this.src);">
             <div class="instagram__overlay">
               <div class="car__info">
                 <a href="https://wa.me/5527997356397?text=Interesse%20no%20${encodeURIComponent(post.caption.split(' —')[0])}" target="_blank" rel="noopener" class="car__whatsapp">
@@ -163,7 +163,7 @@ class InstagramManager {
           <div class="instagram__post" data-post-id="fallback">
             <div class="instagram__image">
               <div class="car__badge">DISPONÍVEL</div>
-              <img src="./Imagens/logo.webp" alt="Veículo disponível" loading="lazy">
+              <img src="/Imagens/logo.webp" alt="Veículo disponível" loading="lazy">
               <div class="instagram__overlay">
                 <div class="car__info">
                   <div class="car__price">Consulte</div>

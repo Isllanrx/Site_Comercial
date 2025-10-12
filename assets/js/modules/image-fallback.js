@@ -5,9 +5,9 @@ class ImageFallbackManager {
   constructor() {
     this.isInitialized = false;
     this.fallbackImages = {
-      car: './Imagens/logo.webp',
-      avatar: './Imagens/logo.webp',
-      placeholder: './Imagens/logo.webp'
+      car: '/Imagens/logo.webp',
+      avatar: '/Imagens/logo.webp',
+      placeholder: '/Imagens/logo.webp'
     };
   }
 

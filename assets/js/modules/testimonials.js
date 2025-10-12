@@ -66,406 +66,406 @@ class TestimonialsManager {
         rating: 5,
         text: "Nossa, que experiência incrível! Estava com medo de comprar carro usado, mas o Paulo me tranquilizou desde o primeiro contato. Meu Honda City está perfeito, nem parece que tem 4 anos. Minha filha adora andar nele!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/maria_fernandes_lima.jpg"
+        avatar: "/assets/Atores/Mulheres/maria_fernandes_lima.jpg"
       },
       {
         name: "João Santos",
         rating: 5,
         text: "Cara, não acreditei quando o financiamento foi aprovado em 2 dias! Outros lugares demoravam semanas. O Paulo me ajudou com toda a papelada e ainda conseguiu um desconto na entrada. Valeu demais!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/joao_alves_rocha.jpg"
+        avatar: "/assets/Atores/Homens/joao_alves_rocha.jpg"
       },
       {
         name: "Ana Costa",
         rating: 5,
         text: "Estava procurando carro há meses e sempre desconfiada. Quando cheguei aqui, o Paulo me mostrou tudo certinho, até o histórico do carro. Meu marido ficou impressionado com a transparência. Recomendo!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/ana_souza_lima.jpg"
+        avatar: "/assets/Atores/Mulheres/ana_souza_lima.jpg"
       },
       {
         name: "Carlos Oliveira",
         rating: 5,
         text: "Meu Fox tá rodando que é uma beleza! Comprei há 2 anos e nunca deu problema. O Paulo é gente boa demais, sempre que passo na rua ele me cumprimenta. Isso que é atendimento!",
         date: this.generateCoherentDate(2019),
-        avatar: "./assets/Atores/Homens/carlos_oliveira_santos.jpg"
+        avatar: "/assets/Atores/Homens/carlos_oliveira_santos.jpg"
       },
       {
         name: "Fernanda Lima",
         rating: 5,
         text: "Primeira vez comprando carro e estava super nervosa. O Paulo foi muito paciente, explicou tudo direitinho e ainda me deu dicas de como cuidar do carro. Meu Clio tá lindo!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/fernanda_duarte_freitas.jpg"
+        avatar: "/assets/Atores/Mulheres/fernanda_duarte_freitas.jpg"
       },
       {
         name: "Roberto Alves",
         rating: 5,
         text: "Meu Voyage é meu xodó! Estava precisando de um carro econômico e confiável. O Paulo me mostrou várias opções e eu escolhi o melhor. Minha esposa também aprovou!",
         date: this.generateCoherentDate(2018),
-        avatar: "./assets/Atores/Homens/ricardo_borges_alves.jpg"
+        avatar: "/assets/Atores/Homens/ricardo_borges_alves.jpg"
       },
       {
         name: "Patricia Mendes",
         rating: 5,
         text: "Que alívio encontrar um lugar confiável! Estava com medo de ser enganada, mas o Paulo é muito honesto. Meu carro veio com tudo certinho e ainda ganhei um kit de limpeza. Adorei!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/patricia_campos_nunes.png"
+        avatar: "/assets/Atores/Mulheres/patricia_campos_nunes.png"
       },
       {
         name: "Marcos Ferreira",
         rating: 5,
         text: "Já trouxe 3 amigos aqui e todos compraram! O Paulo é o cara mesmo. Sempre tem carros bons e os preços são justos. Meu pai também comprou um carro aqui ano passado.",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/marcos_silva_santos.png"
+        avatar: "/assets/Atores/Homens/marcos_silva_santos.png"
       },
       {
         name: "Luciana Rocha",
         rating: 5,
         text: "Meu Siena é perfeito para a família! Espaçoso, econômico e confiável. O Paulo me ajudou a escolher o carro ideal para mim e meus filhos. Estou muito feliz com a compra!",
         date: this.generateCoherentDate(2019),
-        avatar: "./assets/Atores/Mulheres/luana_rocha_ferreira.jpg"
+        avatar: "/assets/Atores/Mulheres/luana_rocha_ferreira.jpg"
       },
       {
         name: "Diego Martins",
         rating: 5,
         text: "Sempre quis um Honda Civic e finalmente consegui! O Paulo me deu um preço ótimo e ainda conseguiu financiamento com juros baixos. Meu sonho realizado!",
         date: this.generateCoherentDate(2021),
-        avatar: "./assets/Atores/Homens/diego_costa_nunes.png"
+        avatar: "/assets/Atores/Homens/diego_costa_nunes.png"
       },
       {
         name: "Camila Santos",
         rating: 5,
         text: "Estava com pressa para comprar um carro e o Paulo resolveu tudo rapidinho! Meu carro veio com tudo certinho, nem precisei me preocupar com nada. Muito obrigada!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/camila_ferreira_lopes.jpg"
+        avatar: "/assets/Atores/Mulheres/camila_ferreira_lopes.jpg"
       },
       {
         name: "Rafael Silva",
         rating: 5,
         text: "Cara, que atendimento top! O Paulo me tratou como se fosse da família. Meu carro tá rodando perfeitamente e ainda ganhei uma revisão grátis. Valeu demais!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/rafael_lima_fonseca.jpg"
+        avatar: "/assets/Atores/Homens/rafael_lima_fonseca.jpg"
       },
       {
         name: "Juliana Costa",
         rating: 5,
         text: "Primeira vez comprando carro e estava super perdida. O Paulo me guiou em tudo, desde a escolha até o financiamento. Meu carro tá lindo e eu estou amando!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/juliana_correia_silva.jpg"
+        avatar: "/assets/Atores/Mulheres/juliana_correia_silva.jpg"
       },
       {
         name: "André Oliveira",
         rating: 5,
         text: "Atendimento excepcional! Comprei meu Fox 2019 e estou muito satisfeito. Carro revisado, documentação ok e preço justo. Paulo é muito confiável!",
         date: this.generateCoherentDate(2019),
-        avatar: "./assets/Atores/Homens/andre_santos_silva.jpg"
+        avatar: "/assets/Atores/Homens/andre_santos_silva.jpg"
       },
       {
         name: "Bruna Lima",
         rating: 5,
         text: "Experiência incrível! Paulo foi muito atencioso, mostrou várias opções e me ajudou a escolher o carro ideal. Financiamento aprovado em 1 dia!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/bruna_cardoso_alves.png"
+        avatar: "/assets/Atores/Mulheres/bruna_cardoso_alves.png"
       },
       {
         name: "Thiago Alves",
         rating: 5,
         text: "Melhor concessionária da região! Comprei meu Voyage 2018 e foi tudo perfeito. Carro em ótimo estado, preço justo e atendimento nota 10!",
         date: this.generateCoherentDate(2018),
-        avatar: "./assets/Atores/Homens/thiago_oliveira_dias.jpg"
+        avatar: "/assets/Atores/Homens/thiago_oliveira_dias.jpg"
       },
       {
         name: "Vanessa Mendes",
         rating: 5,
         text: "Recomendo demais! Paulo é muito profissional, explicou todos os detalhes e o carro estava exatamente como prometido. Voltarei com certeza!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/vanessa_almeida_cardoso.jpg"
+        avatar: "/assets/Atores/Mulheres/vanessa_almeida_cardoso.jpg"
       },
       {
         name: "Gustavo Ferreira",
         rating: 5,
         text: "Compra tranquila e segura! Carro revisado, documentação em dia e preço honesto. Paulo é muito transparente em todo o processo. Recomendo!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/gustavo_araujo_mendes.jpg"
+        avatar: "/assets/Atores/Homens/gustavo_araujo_mendes.jpg"
       },
       {
         name: "Larissa Santos",
         rating: 5,
         text: "Atendimento diferenciado! Comprei meu Clio 2020 e foi uma experiência maravilhosa. Paulo é muito atencioso e os carros são de excelente qualidade!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/larissa_castro_vieira.jpg"
+        avatar: "/assets/Atores/Mulheres/larissa_castro_vieira.jpg"
       },
       {
         name: "Felipe Costa",
         rating: 5,
         text: "Melhor lugar para comprar carro seminovo! Processo transparente, carro impecável e preço justo. Paulo é muito confiável e profissional!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/felipe_araujo_pereira.jpg"
+        avatar: "/assets/Atores/Homens/felipe_araujo_pereira.jpg"
       },
       {
         name: "Renata Oliveira",
         rating: 5,
         text: "Experiência fantástica! Comprei meu Honda City 2020 e superou todas as expectativas. Carro perfeito, documentação ok e atendimento excepcional!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/renata_ribeiro_machado.png"
+        avatar: "/assets/Atores/Mulheres/renata_ribeiro_machado.png"
       },
       {
         name: "Leonardo Silva",
         rating: 5,
         text: "Paulo Veículos é sinônimo de qualidade! Comprei meu Siena 2019 e foi tudo perfeito. Carro revisado, preço honesto e atendimento nota 10!",
         date: this.generateCoherentDate(2019),
-        avatar: "./assets/Atores/Homens/leonardo_souza_andrade.png"
+        avatar: "/assets/Atores/Homens/leonardo_souza_andrade.png"
       },
       {
         name: "Priscila Lima",
         rating: 5,
         text: "Recomendo de olhos fechados! Paulo é muito profissional, carros de qualidade e preços justos. Já indiquei para vários amigos!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/sara_lima_silva.jpg"
+        avatar: "/assets/Atores/Mulheres/sara_lima_silva.jpg"
       },
       {
         name: "Rodrigo Alves",
         rating: 5,
         text: "Melhor experiência de compra! Carro impecável, documentação em dia e financiamento facilitado. Paulo é muito transparente e confiável!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/rodrigo_ferreira_cunha.jpg"
+        avatar: "/assets/Atores/Homens/rodrigo_ferreira_cunha.jpg"
       },
       {
         name: "Tatiana Mendes",
         rating: 5,
         text: "Atendimento excepcional! Comprei meu Fox 2019 e foi perfeito. Paulo explicou tudo detalhadamente e o carro estava impecável. Super indico!",
         date: this.generateCoherentDate(2019),
-        avatar: "./assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
+        avatar: "/assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
       },
       {
         name: "Bruno Ferreira",
         rating: 5,
         text: "Processo de compra muito tranquilo! Carro revisado, preço justo e atendimento personalizado. Paulo Veículos é referência em qualidade!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/bruno_barbosa_martins.jpg"
+        avatar: "/assets/Atores/Homens/bruno_barbosa_martins.jpg"
       },
       {
         name: "Carla Santos",
         rating: 5,
         text: "Experiência incrível! Paulo foi muito atencioso, mostrou várias opções e me ajudou a encontrar o carro ideal. Recomendo demais!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/carolina_pinto_costa.png"
+        avatar: "/assets/Atores/Mulheres/carolina_pinto_costa.png"
       },
       {
         name: "Marcelo Costa",
         rating: 5,
         text: "Melhor concessionária de Vila Velha! Comprei meu Voyage 2018 e foi tudo perfeito. Carro em ótimo estado e preço honesto!",
         date: this.generateCoherentDate(2018),
-        avatar: "./assets/Atores/Homens/eduardo_pereira_gomes.jpg"
+        avatar: "/assets/Atores/Homens/eduardo_pereira_gomes.jpg"
       },
       {
         name: "Daniela Oliveira",
         rating: 5,
         text: "Atendimento diferenciado! Paulo é muito profissional, explicou todos os detalhes e o carro estava exatamente como prometido!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
+        avatar: "/assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
       },
       {
         name: "Vinicius Silva",
         rating: 5,
         text: "Compra segura e tranquila! Carro revisado, documentação em dia e preço justo. Paulo é muito transparente em todo o processo!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/gabriel_mendes_rocha.jpg"
+        avatar: "/assets/Atores/Homens/gabriel_mendes_rocha.jpg"
       },
       {
         name: "Amanda Lima",
         rating: 5,
         text: "Experiência maravilhosa! Comprei meu Clio 2020 e superou todas as expectativas. Paulo é muito atencioso e os carros são excelentes!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
+        avatar: "/assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
       },
       {
         name: "Ricardo Alves",
         rating: 5,
         text: "Melhor lugar para comprar carro! Processo transparente, carro impecável e atendimento nota 10. Paulo é muito confiável!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/bruno_barbosa_martins.jpg"
+        avatar: "/assets/Atores/Homens/bruno_barbosa_martins.jpg"
       },
       {
         name: "Isabela Mendes",
         rating: 5,
         text: "Recomendo demais! Comprei meu Honda City 2020 e foi perfeito. Carro em excelente estado, documentação ok e preço justo!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/carolina_pinto_costa.png"
+        avatar: "/assets/Atores/Mulheres/carolina_pinto_costa.png"
       },
       {
         name: "Gabriel Ferreira",
         rating: 5,
         text: "Paulo Veículos é sinônimo de qualidade! Atendimento excepcional, carros revisados e preços honestos. Voltarei com certeza!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/eduardo_pereira_gomes.jpg"
+        avatar: "/assets/Atores/Homens/eduardo_pereira_gomes.jpg"
       },
       {
         name: "Natalia Santos",
         rating: 5,
         text: "Experiência fantástica! Paulo foi muito profissional, explicou tudo e o carro estava impecável. Já indiquei para vários amigos!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
+        avatar: "/assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
       },
       {
         name: "Henrique Costa",
         rating: 5,
         text: "Melhor experiência de compra! Carro revisado, preço justo e atendimento personalizado. Paulo é muito transparente e confiável!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/gabriel_mendes_rocha.jpg"
+        avatar: "/assets/Atores/Homens/gabriel_mendes_rocha.jpg"
       },
       {
         name: "Bianca Oliveira",
         rating: 5,
         text: "Atendimento excepcional! Comprei meu Fox 2019 e foi tudo perfeito. Paulo explicou todos os detalhes e o carro estava impecável!",
         date: this.generateCoherentDate(2019),
-        avatar: "./assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
+        avatar: "/assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
       },
       {
         name: "Mateus Silva",
         rating: 5,
         text: "Processo de compra muito tranquilo! Carro em ótimo estado, documentação em dia e preço honesto. Recomendo de olhos fechados!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/bruno_barbosa_martins.jpg"
+        avatar: "/assets/Atores/Homens/bruno_barbosa_martins.jpg"
       },
       {
         name: "Leticia Lima",
         rating: 5,
         text: "Experiência incrível! Paulo foi muito atencioso, mostrou várias opções e me ajudou a escolher o carro ideal. Super indico!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/carolina_pinto_costa.png"
+        avatar: "/assets/Atores/Mulheres/carolina_pinto_costa.png"
       },
       {
         name: "Alexandre Alves",
         rating: 5,
         text: "Melhor concessionária da região! Comprei meu Voyage 2018 e foi perfeito. Carro revisado, preço justo e atendimento nota 10!",
         date: this.generateCoherentDate(2018),
-        avatar: "./assets/Atores/Homens/eduardo_pereira_gomes.jpg"
+        avatar: "/assets/Atores/Homens/eduardo_pereira_gomes.jpg"
       },
       {
         name: "Cristina Mendes",
         rating: 5,
         text: "Recomendo demais! Paulo é muito profissional, carros de qualidade e preços justos. Experiência de compra excepcional!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
+        avatar: "/assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
       },
       {
         name: "Fabio Ferreira",
         rating: 5,
         text: "Compra segura e tranquila! Carro impecável, documentação ok e financiamento facilitado. Paulo é muito transparente!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/gabriel_mendes_rocha.jpg"
+        avatar: "/assets/Atores/Homens/gabriel_mendes_rocha.jpg"
       },
       {
         name: "Monica Santos",
         rating: 5,
         text: "Atendimento diferenciado! Comprei meu Clio 2020 e superou todas as expectativas. Paulo é muito atencioso e confiável!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
+        avatar: "/assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
       },
       {
         name: "Eduardo Costa",
         rating: 5,
         text: "Melhor lugar para comprar carro seminovo! Processo transparente, carro revisado e preço honesto. Recomendo para todos!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/bruno_barbosa_martins.jpg"
+        avatar: "/assets/Atores/Homens/bruno_barbosa_martins.jpg"
       },
       {
         name: "Fernanda Oliveira",
         rating: 5,
         text: "Experiência maravilhosa! Comprei meu Honda City 2020 e foi perfeito. Carro em excelente estado e atendimento excepcional!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/carolina_pinto_costa.png"
+        avatar: "/assets/Atores/Mulheres/carolina_pinto_costa.png"
       },
       {
         name: "Lucas Silva",
         rating: 5,
         text: "Paulo Veículos é referência em qualidade! Atendimento personalizado, carros revisados e preços justos. Voltarei com certeza!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/eduardo_pereira_gomes.jpg"
+        avatar: "/assets/Atores/Homens/eduardo_pereira_gomes.jpg"
       },
       {
         name: "Adriana Lima",
         rating: 5,
         text: "Recomendo de olhos fechados! Paulo foi muito profissional, explicou tudo e o carro estava impecável. Já indiquei para amigos!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
+        avatar: "/assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
       },
       {
         name: "Renato Alves",
         rating: 5,
         text: "Melhor experiência de compra! Carro revisado, documentação em dia e preço justo. Paulo é muito transparente e confiável!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/gabriel_mendes_rocha.jpg"
+        avatar: "/assets/Atores/Homens/gabriel_mendes_rocha.jpg"
       },
       {
         name: "Simone Mendes",
         rating: 5,
         text: "Atendimento excepcional! Comprei meu Fox 2019 e foi tudo perfeito. Paulo explicou todos os detalhes com muita paciência!",
         date: this.generateCoherentDate(2019),
-        avatar: "./assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
+        avatar: "/assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
       },
       {
         name: "Claudio Ferreira",
         rating: 5,
         text: "Processo de compra muito tranquilo! Carro em ótimo estado, preço honesto e atendimento personalizado. Super recomendo!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/bruno_barbosa_martins.jpg"
+        avatar: "/assets/Atores/Homens/bruno_barbosa_martins.jpg"
       },
       {
         name: "Viviane Santos",
         rating: 5,
         text: "Experiência fantástica! Paulo foi muito atencioso, mostrou várias opções e me ajudou a encontrar o carro perfeito!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/carolina_pinto_costa.png"
+        avatar: "/assets/Atores/Mulheres/carolina_pinto_costa.png"
       },
       {
         name: "Sergio Costa",
         rating: 5,
         text: "Melhor concessionária de Vila Velha! Comprei meu Voyage 2018 e foi perfeito. Carro revisado e preço justo!",
         date: this.generateCoherentDate(2018),
-        avatar: "./assets/Atores/Homens/eduardo_pereira_gomes.jpg"
+        avatar: "/assets/Atores/Homens/eduardo_pereira_gomes.jpg"
       },
       {
         name: "Eliane Oliveira",
         rating: 5,
         text: "Recomendo demais! Paulo é muito profissional, carros de qualidade e atendimento diferenciado. Experiência nota 10!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
+        avatar: "/assets/Atores/Mulheres/fabiana_ferreira_lima.jpg"
       },
       {
         name: "Wagner Silva",
         rating: 5,
         text: "Compra segura e confiável! Carro impecável, documentação ok e financiamento facilitado. Paulo é muito transparente!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/gabriel_mendes_rocha.jpg"
+        avatar: "/assets/Atores/Homens/gabriel_mendes_rocha.jpg"
       },
       {
         name: "Rosana Lima",
         rating: 5,
         text: "Atendimento excepcional! Comprei meu Clio 2020 e superou todas as expectativas. Paulo é muito atencioso e honesto!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
+        avatar: "/assets/Atores/Mulheres/tatiane_fonseca_duarte.jpg"
       },
       {
         name: "Marcio Alves",
         rating: 5,
         text: "Melhor lugar para comprar carro! Processo transparente, carro revisado e preço honesto. Recomendo para toda família!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/bruno_barbosa_martins.jpg"
+        avatar: "/assets/Atores/Homens/bruno_barbosa_martins.jpg"
       },
       {
         name: "Claudia Mendes",
         rating: 5,
         text: "Experiência maravilhosa! Comprei meu Honda City 2020 e foi perfeito. Carro em excelente estado e atendimento top!",
         date: this.generateCoherentDate(2020),
-        avatar: "./assets/Atores/Mulheres/carolina_pinto_costa.png"
+        avatar: "/assets/Atores/Mulheres/carolina_pinto_costa.png"
       },
       {
         name: "Roberto Ferreira",
         rating: 5,
         text: "Paulo Veículos é sinônimo de confiança! Atendimento personalizado, carros revisados e preços justos. Nota 10!",
         date: this.generateRandomDate(),
-        avatar: "./assets/Atores/Homens/eduardo_pereira_gomes.jpg"
+        avatar: "/assets/Atores/Homens/eduardo_pereira_gomes.jpg"
       }
     ];
   }
@@ -527,7 +527,7 @@ class TestimonialsManager {
           </div>
           <p class="testimonial__text">"Excelente atendimento! Comprei meu carro aqui e foi uma experiência incrível. Recomendo de olhos fechados!"</p>
           <div class="testimonial__author">
-            <img src="./assets/Atores/Mulheres/maria_fernandes_lima.jpg" alt="Cliente" class="testimonial__avatar" loading="lazy">
+            <img src="/assets/Atores/Mulheres/maria_fernandes_lima.jpg" alt="Cliente" class="testimonial__avatar" loading="lazy">
             <div class="testimonial__info">
               <h4 class="testimonial__name">Maria Silva</h4>
               <span class="testimonial__date">15 de Novembro, 2024</span>
@@ -562,7 +562,7 @@ class TestimonialsManager {
           </div>
           <p class="testimonial__text">"${review.text}"</p>
           <div class="testimonial__author">
-            <img src="${review.avatar}" alt="${review.name}" class="testimonial__avatar" loading="lazy" onerror="this.src='./assets/Atores/Mulheres/maria_fernandes_lima.jpg'">
+            <img src="${review.avatar}" alt="${review.name}" class="testimonial__avatar" loading="lazy" onerror="this.src='/assets/Atores/Mulheres/maria_fernandes_lima.jpg'">
             <div class="testimonial__info">
               <h4 class="testimonial__name">${review.name}</h4>
               <span class="testimonial__date">${review.date}</span>
@@ -603,7 +603,7 @@ class TestimonialsManager {
             </div>
             <p class="testimonial__text">"Excelente atendimento! Comprei meu carro aqui e foi uma experiência incrível. Recomendo de olhos fechados!"</p>
             <div class="testimonial__author">
-              <img src="./assets/Atores/Mulheres/maria_fernandes_lima.jpg" alt="Cliente" class="testimonial__avatar" loading="lazy">
+              <img src="/assets/Atores/Mulheres/maria_fernandes_lima.jpg" alt="Cliente" class="testimonial__avatar" loading="lazy">
               <div class="testimonial__info">
                 <h4 class="testimonial__name">Maria Silva</h4>
                 <span class="testimonial__date">15 de Novembro, 2024</span>
