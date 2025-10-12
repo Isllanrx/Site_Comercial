@@ -38,7 +38,7 @@
   ],
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/assets/css/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -64,6 +64,19 @@
       ]
     },
     {
+      "source": "/assets/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "font/woff2"
+        }
+      ]
+    },
+    {
       "source": "/Imagens/(.*)",
       "headers": [
         {
@@ -77,7 +90,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(html))",
+      "source": "/(.*\\.html)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -90,7 +103,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(json))",
+      "source": "/(.*\\.json)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -136,10 +149,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "sw.js": {
-      "maxDuration": 10
-    }
-  }
+  ]
 }

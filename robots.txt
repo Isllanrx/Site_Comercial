@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://pauloveiculos.com.br/sitemap.xml
+Sitemap: https://paulo-veiculos.vercel.app/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
@@ -34,4 +34,4 @@ Allow: /*.jpeg
 Allow: /*.png
 
 # Host directive
-Host: https://pauloveiculos.com.br
+Host: https://paulo-veiculos.vercel.app
