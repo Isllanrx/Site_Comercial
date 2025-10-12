@@ -2,7 +2,7 @@
   "name": "Paulo Veículos - Concessionária Vila Velha",
   "short_name": "Paulo Veículos",
   "description": "Concessionária especializada em compra, venda e troca de veículos em Vila Velha. 12 anos de experiência, financiamento facilitado.",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",

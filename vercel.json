@@ -2,38 +2,38 @@
   "version": 2,
   "builds": [
     {
-      "src": "Landing_page/**/*",
+      "src": "**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/",
-      "dest": "/Landing_page/index.html"
+      "dest": "/index.html"
     },
     {
       "src": "/simulador-financiamento",
-      "dest": "/Landing_page/simulador-financiamento.html"
+      "dest": "/simulador-financiamento.html"
     },
     {
       "src": "/assets/(.*)",
-      "dest": "/Landing_page/assets/$1"
+      "dest": "/assets/$1"
     },
     {
       "src": "/Imagens/(.*)",
-      "dest": "/Landing_page/Imagens/$1"
+      "dest": "/Imagens/$1"
     },
     {
       "src": "/sw.js",
-      "dest": "/Landing_page/sw.js"
+      "dest": "/sw.js"
     },
     {
       "src": "/manifest.json",
-      "dest": "/Landing_page/manifest.json"
+      "dest": "/manifest.json"
     },
     {
       "src": "/(.*)",
-      "dest": "/Landing_page/$1"
+      "dest": "/$1"
     }
   ],
   "headers": [
@@ -43,6 +43,23 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/css; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/assets/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/javascript; charset=utf-8"
         }
       ]
     },
@@ -52,24 +69,36 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/(.*\\.(js|css))",
-      "headers": [
+        },
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "key": "Content-Type",
+          "value": "image/webp"
         }
       ]
     },
     {
-      "source": "/(.*\\.(html|json|xml|txt))",
+      "source": "/(.*\\.(html))",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(json))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
         }
       ]
     },
@@ -81,14 +110,35 @@
           "value": "public, max-age=0, must-revalidate"
         },
         {
+          "key": "Content-Type",
+          "value": "application/javascript; charset=utf-8"
+        },
+        {
           "key": "Service-Worker-Allowed",
           "value": "/"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
         }
       ]
     }
   ],
   "functions": {
-    "Landing_page/sw.js": {
+    "sw.js": {
       "maxDuration": 10
     }
   }
