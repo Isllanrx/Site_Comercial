@@ -103,7 +103,7 @@ Landing_page/
 
 ## Acessibilidade
 
-- **ARIA Labels**: Navegação e carrosséis
+- **ARIA Labels**: Navegação e carrosséis.
 - **Contraste**: WCAG AA compliant
 - **Semântica**: HTML5 semântico
 - **Navegação**: Teclado e screen readers
