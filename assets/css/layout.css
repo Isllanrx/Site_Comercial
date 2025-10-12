@@ -97,6 +97,7 @@
   position: relative;
   overflow: hidden;
   margin-top: 70px; /* Account for fixed header */
+  margin-bottom: 0;
 }
 
 .urgency-banner::before {
@@ -171,6 +172,7 @@
   align-items: center;
   background: linear-gradient(135deg, var(--primary-color) 0%, #1a1a1a 100%);
   overflow: hidden;
+  margin-top: 0;
 }
 
 .hero .container {
@@ -182,7 +184,7 @@
 .hero__carousel {
   width: 100%;
   position: relative;
-  min-height: calc(100vh - 70px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -193,7 +195,7 @@
   justify-content: space-between;
   gap: var(--spacing-4xl);
   width: 100%;
-  min-height: calc(100vh - 70px);
+  min-height: 100vh;
   padding: var(--spacing-2xl) 0;
 }
 
@@ -232,23 +234,23 @@
 .hero__image {
   flex: 1;
   max-width: 500px;
+  height: 400px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px !important;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: var(--shadow-xl);
 }
 
 .hero__img {
   width: 100%;
-  height: auto;
-  max-height: 400px;
+  height: 100%;
+  min-height: 400px;
   object-fit: cover;
-  border-radius: 15px !important;
+  border-radius: 15px;
   transition: var(--transition-slow);
-  display: block;
 }
 
 .hero__img:hover {
@@ -257,37 +259,7 @@
 
 /* Garantir que as bordas arredondadas sejam aplicadas corretamente */
 .hero__image img {
-  border-radius: 15px !important;
-}
-
-/* Força as bordas arredondadas em todas as imagens do hero */
-.hero__slide .hero__img {
-  border-radius: 15px !important;
-  object-fit: cover !important;
-  overflow: hidden !important;
-}
-
-/* Garantir que o container também tenha overflow hidden */
-.hero__slide .hero__image {
-  border-radius: 15px !important;
-  overflow: hidden !important;
-}
-
-/* Regra mais específica para forçar as bordas arredondadas */
-.hero__carousel .hero__slide .hero__image .hero__img {
-  border-radius: 15px !important;
-  object-fit: cover !important;
-  overflow: hidden !important;
-  clip-path: inset(0 round 15px) !important;
-}
-
-/* Força absoluta para as bordas arredondadas */
-img.hero__img {
-  border-radius: 15px !important;
-  object-fit: cover !important;
-  overflow: hidden !important;
-  -webkit-border-radius: 15px !important;
-  -moz-border-radius: 15px !important;
+  border-radius: inherit;
 }
 
 .hero__indicators {
