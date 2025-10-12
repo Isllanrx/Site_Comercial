@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Landing_page/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/Landing_page/index.html"
+    },
+    {
+      "src": "/simulador-financiamento",
+      "dest": "/Landing_page/simulador-financiamento.html"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/Landing_page/assets/$1"
+    },
+    {
+      "src": "/Imagens/(.*)",
+      "dest": "/Landing_page/Imagens/$1"
+    },
+    {
+      "src": "/sw.js",
+      "dest": "/Landing_page/sw.js"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/Landing_page/manifest.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/Landing_page/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/Imagens/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(js|css))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(html|json|xml|txt))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "Service-Worker-Allowed",
+          "value": "/"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "Landing_page/sw.js": {
+      "maxDuration": 10
+    }
+  }
+}

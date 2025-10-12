@@ -1,0 +1,33 @@
+# Cache headers para otimizar performance no Vercel
+
+# HTML files - no cache
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS files - cache for 1 year
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# JavaScript files - cache for 1 year
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - cache for 1 year
+/Imagens/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts - cache for 1 year
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# JSON files - no cache
+/*.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Service Worker - no cache
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Manifest - no cache
+/manifest.json
+  Cache-Control: public, max-age=0, must-revalidate

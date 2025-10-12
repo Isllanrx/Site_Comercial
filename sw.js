@@ -1,4 +1,4 @@
-const CACHE_NAME = 'paulo-veiculos-v1.0.0';
+const CACHE_NAME = 'paulo-veiculos-v1.0.1';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -24,9 +24,7 @@ const urlsToCache = [
   '/Imagens/carros-esportivos-cor-e-unidade.webp',
   '/manifest.json',
   '/sitemap.xml',
-  '/robots.txt',
-  'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'
+  '/robots.txt'
 ];
 
 self.addEventListener('install', event => {
@@ -39,6 +37,14 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
+  // Skip caching for external resources and API calls
+  if (event.request.url.includes('fonts.googleapis.com') || 
+      event.request.url.includes('cdnjs.cloudflare.com') ||
+      event.request.url.includes('api.') ||
+      event.request.url.includes('instagram.com')) {
+    return;
+  }
+  
   event.respondWith(
     caches.match(event.request)
       .then(response => {

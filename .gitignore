@@ -1,0 +1,78 @@
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de build
+dist/
+build/
+.next/
+out/
+
+# Arquivos de cache
+.cache/
+.parcel-cache/
+.vite/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Arquivos temporários
+.tmp/
+temp/
+*.tmp
+*.temp
+
+# Arquivos do sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+
+# Arquivos de configuração local
+config.local.js
+settings.local.json
+
+# Arquivos de teste
+coverage/
+.nyc_output/
+test-results/
+
+# Arquivos específicos do Vercel
+.vercel/
+
+# Arquivos de cache do navegador
+*.cache
+
+# Arquivos de imagem temporários
+*.tmp.jpg
+*.tmp.png
+*.tmp.webp
+
+# Arquivos de desenvolvimento
+dev/
+development/

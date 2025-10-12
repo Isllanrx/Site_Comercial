@@ -729,27 +729,6 @@ class TestimonialsManager {
     this.startAutoPlay();
   }
 
-
-  show(index) {
-    if (!this.cards.length || index < 0 || index >= this.cards.length) return;
-    
-    // Remove active class from all cards
-    removeClassFromAll(this.cards, CLASSES.active);
-    
-    // Add active class to current card
-    addClassSafe(this.cards[index], CLASSES.active);
-    
-    this.currentIndex = index;
-    
-    // Log detalhado do depoimento atual
-    const currentReview = this.reviews[index];
-    if (currentReview) {
-      log(`Mostrando depoimento ${index + 1} de ${this.cards.length}: ${currentReview.name} (${currentReview.avatar})`);
-    } else {
-      log(`Mostrando depoimento ${index + 1} de ${this.cards.length}`);
-    }
-  }
-
   destroy() {
     this.stopAutoPlay();
     this.isInitialized = false;
