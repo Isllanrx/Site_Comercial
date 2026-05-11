@@ -1,10 +1,20 @@
-# Paulo Veículos | Premium React Experience
+# Paulo Veículos | Premium Automotive Platform
 
-Plataforma de revenda de automóveis modernizada para **React 18**, **TypeScript** e **Tailwind CSS**. O sistema oferece uma experiência de usuário premium com design Clean & Modern, animações fluidas e um simulador financeiro de alta precisão.
+Modern automotive marketplace platform built with React 18, TypeScript and Tailwind CSS, focused on premium user experience, responsive design and scalable frontend architecture.
 
-## 🏗️ Arquitetura React
+The platform delivers a modern vehicle browsing experience with fluid animations, real-time financial simulation and performance-oriented rendering workflows.
 
-O projeto utiliza uma estrutura modular baseada em **Features**, facilitando a manutenção e escalabilidade.
+---
+
+# Overview
+
+This project modernizes a vehicle dealership platform through a modular frontend architecture designed for scalability, maintainability and responsive user interaction.
+
+The application follows a feature-based architecture, isolating business modules and shared services to improve long-term maintainability and development workflows.
+
+---
+
+# React Architecture
 
 ```mermaid
 graph TD
@@ -15,62 +25,168 @@ graph TD
     App --> Test[Testimonials Feature]
     App --> Foot[Footer]
 
-    subgraph "Camada de Lógica & Dados"
+    subgraph Logic_and_Data_Layer [Logic & Data Layer]
         Sim --> useSim[useSimulator Hook]
         Inv --> DataSvc[DataService]
         useSim --> DataSvc
     end
 
-    subgraph "Fontes de Dados"
+    subgraph Data_Sources [Data Sources]
         DataSvc --> JSON[(JSON Storage)]
     end
 ```
 
-## 🚀 Tecnologias Core
+---
 
-- **Frontend**: React 18 + Vite
-- **Tipagem**: TypeScript
-- **Estilização**: Tailwind CSS (Design System Customizado)
-- **Animações**: Framer Motion (Micro-interações e Reveals)
-- **Ícones**: Lucide React
-- **PWA**: Suporte para instalação e modo offline
+# System Architecture
 
-## 📂 Estrutura de Diretórios
+The platform is organized into isolated feature modules and shared infrastructure layers.
+
+## Core Layers
+
+### UI Components
+
+Reusable global interface components:
+
+- Navigation
+- Footer
+- Shared layout elements
+- Reusable UI patterns
+
+### Feature Modules
+
+Business-oriented isolated modules:
+
+- Hero section
+- Vehicle inventory
+- Financial simulator
+- Testimonials system
+
+### Hooks Layer
+
+Custom hooks responsible for:
+
+- State abstraction
+- Shared business logic
+- Reactive calculations
+- UI interaction workflows
+
+### Services Layer
+
+Responsible for:
+
+- Data access abstraction
+- Centralized data communication
+- Inventory loading
+- Shared business services
+
+---
+
+# Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React 18 |
+| Build Tool | Vite |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion |
+| Icons | Lucide React |
+| PWA | Service Worker + Offline Support |
+
+---
+
+# Directory Structure
 
 ```text
 src/
-├── components/         # Componentes globais de UI (Navbar, Footer)
-├── features/           # Módulos de negócio isolados (Hero, Inventory, Simulator)
-├── hooks/              # Custom hooks para lógica compartilhada
-├── services/           # Camada de comunicação com dados (DataService)
-├── data/               # Repositório de dados JSON
-├── styles/             # Configurações globais de Tailwind
-└── App.tsx             # Orquestrador da SPA
+├── components/         # Shared UI components
+├── features/           # Isolated business modules
+├── hooks/              # Custom hooks and shared logic
+├── services/           # Data abstraction layer
+├── data/               # JSON-based data repository
+├── styles/             # Global Tailwind configuration
+└── App.tsx             # SPA orchestrator
 ```
 
-## 🛠️ Como Executar
+---
 
-1. Instale as dependências:
-   ```bash
-   npm install
-   ```
+# Features
 
-2. Inicie o ambiente de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-
-3. Para build de produção:
-   ```bash
-   npm run build
-   ```
-
-## 📈 Diferenciais da Versão React
-
-1. **Simulador em Tempo Real**: Cálculos reativos processados instantaneamente com feedback visual.
-2. **Mobile First Premium**: Interface otimizada para toque (swipe no carrossel) e 100% responsiva para iOS/Android.
-3. **Performance Extrema**: Carregamento otimizado de imagens e bundle reduzido via Vite.
-4. **Segurança de Tipos**: Lógica financeira blindada com interfaces TypeScript.
+- Real-time financial simulation
+- Reactive calculation workflows
+- Mobile-first responsive interface
+- Swipe-enabled carousel interactions
+- Progressive Web App (PWA) support
+- Optimized image loading
+- Lightweight production bundles
+- Smooth UI animations and transitions
+- Modular feature-based architecture
+- Type-safe financial processing
 
 ---
-© 2024 Paulo Veículos. Redefinindo a experiência de compra de seminovos.
+
+# Performance Optimizations
+
+The platform was designed with a performance-oriented frontend architecture, including:
+
+- Optimized asset delivery
+- Reduced bundle size with Vite
+- Lazy rendering strategies
+- Efficient state management
+- Responsive rendering pipelines
+- Mobile-first interaction workflows
+
+---
+
+# Development Setup
+
+## Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+# Development Environment
+
+```bash
+npm run dev
+```
+
+---
+
+# Production Build
+
+```bash
+npm run build
+```
+
+---
+
+# Engineering Principles
+
+- Feature-Based Architecture
+- Separation of Concerns (SoC)
+- Modular Frontend Design
+- Responsive-First Development
+- Performance-Oriented Rendering
+- Type-Safe Business Logic
+- Maintainable Component Structure
+
+---
+
+# Use Cases
+
+- Automotive marketplaces
+- Vehicle dealership platforms
+- Product showcase applications
+- Responsive e-commerce interfaces
+- Financial simulation systems
+
+---
+
+# License
+
+© 2024 Paulo Veículos. All rights reserved.
