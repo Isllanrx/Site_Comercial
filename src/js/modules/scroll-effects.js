@@ -1,4 +1,3 @@
-// ===== SCROLL EFFECTS MODULE =====
 import { SELECTORS, TIMING } from '../utils/constants.js';
 import { 
   getElements, 
@@ -16,21 +15,15 @@ class ScrollEffectsManager {
 
   async init() {
     try {
-      log('Inicializando módulo Scroll Effects...');
-      
+      log('Inicializando modulo Scroll Effects...');
       this.revealElements = getElements(SELECTORS.scrollRevealElements);
-      
       if (!this.revealElements.length) {
-        log('Elementos de scroll reveal não encontrados');
+        log('Elementos de scroll reveal nao encontrados');
         return;
       }
-
       this.setupScrollListener();
-      this.checkElements(); // Initial check
-      
+      this.checkElements();
       this.isInitialized = true;
-      log(`${this.revealElements.length} elementos de scroll reveal inicializados`);
-      
     } catch (error) {
       console.error('Erro ao inicializar scroll effects:', error);
     }
@@ -40,7 +33,6 @@ class ScrollEffectsManager {
     const debouncedCheck = debounce(() => {
       this.checkElements();
     }, TIMING.scrollDebounceDelay);
-    
     window.addEventListener('scroll', debouncedCheck);
     window.addEventListener('resize', debouncedCheck);
   }
@@ -55,9 +47,8 @@ class ScrollEffectsManager {
 
   destroy() {
     this.isInitialized = false;
-    log('Módulo Scroll Effects destruído');
+    log('Modulo Scroll Effects destruido');
   }
 }
 
-// Export singleton instance
 export default new ScrollEffectsManager();

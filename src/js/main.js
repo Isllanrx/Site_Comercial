@@ -1,6 +1,8 @@
 // ===== MAIN APPLICATION =====
 import { TIMING } from './utils/constants.js';
 import { log, wait } from './utils/helpers.js';
+import { initPolyfills } from './utils/polyfills.js';
+import { registerSW } from './utils/sw-register.js';
 import heroManager from './modules/hero.js';
 import navigationManager from './modules/navigation.js';
 import testimonialsManager from './modules/testimonials.js';
@@ -11,6 +13,7 @@ import scrollEffectsManager from './modules/scroll-effects.js';
 import imageFallbackManager from './modules/image-fallback.js';
 import onlineCounterManager from './modules/online-counter.js';
 import smoothScrollManager from './modules/smooth-scroll.js';
+import simulatorManager from './modules/simulator.js';
 
 class PauloVeiculosApp {
   constructor() {
@@ -25,28 +28,28 @@ class PauloVeiculosApp {
       scrollEffects: scrollEffectsManager,
       imageFallback: imageFallbackManager,
       onlineCounter: onlineCounterManager,
-      smoothScroll: smoothScrollManager
+      smoothScroll: smoothScrollManager,
+      simulator: simulatorManager
     };
   }
 
   async init() {
     try {
-      log('🚗 Iniciando Paulo Veículos App...');
+      log('Iniciando Paulo Veiculos App...');
       
-      // Wait for DOM to be fully ready
+      initPolyfills();
+      registerSW();
+      
       await wait(TIMING.initDelay);
       
-      // Initialize all modules
       await this.initializeModules();
-      
-      // Setup global event listeners
       this.setupGlobalEvents();
       
       this.isInitialized = true;
-      log('✅ Paulo Veículos App inicializado com sucesso!');
+      log('Paulo Veiculos App inicializado com sucesso!');
       
     } catch (error) {
-      console.error('❌ Erro na inicialização:', error);
+      console.error('Erro na inicializacao:', error);
     }
   }
 
@@ -115,6 +118,10 @@ class PauloVeiculosApp {
     try {
       await this.modules.scrollEffects.init();
     } catch (e) { console.warn('ScrollEffects falhou:', e); }
+
+    try {
+      await this.modules.simulator.init();
+    } catch (e) { console.warn('Simulator falhou:', e); }
   }
 
   async initializeModulesSequence() {

@@ -1,0 +1,187 @@
+{
+  "bv": {
+    "name": "BV Financeira",
+    "carRates": {
+      "excellent": 0.8,
+      "good": 1.0,
+      "regular": 1.3,
+      "basic": 1.6
+    },
+    "motorcycleRates": {
+      "excellent": 1.0,
+      "good": 1.2,
+      "regular": 1.5,
+      "basic": 1.8
+    },
+    "iof": 0.0041,
+    "adminFee": 0.002,
+    "carInsurance": 0.0015,
+    "motorcycleInsurance": 0.0012,
+    "carCet": {
+      "excellent": 1.2,
+      "good": 1.4,
+      "regular": 1.7,
+      "basic": 2.0
+    },
+    "motorcycleCet": {
+      "excellent": 1.4,
+      "good": 1.6,
+      "regular": 1.9,
+      "basic": 2.2
+    },
+    "riskSpread": {
+      "excellent": 0.0,
+      "good": 0.2,
+      "regular": 0.5,
+      "basic": 0.8
+    },
+    "fixedFees": {
+      "excellent": 150,
+      "good": 200,
+      "regular": 250,
+      "basic": 300
+    },
+    "registrationFee": 50,
+    "fiduciaryAlienation": true
+  },
+  "pan": {
+    "name": "Banco PAN",
+    "carRates": {
+      "excellent": 1.2,
+      "good": 1.4,
+      "regular": 1.7,
+      "basic": 2.0
+    },
+    "motorcycleRates": {
+      "excellent": 1.4,
+      "good": 1.6,
+      "regular": 1.9,
+      "basic": 2.2
+    },
+    "iof": 0.0041,
+    "adminFee": 0.0025,
+    "carInsurance": 0.0018,
+    "motorcycleInsurance": 0.0015,
+    "carCet": {
+      "excellent": 1.6,
+      "good": 1.8,
+      "regular": 2.1,
+      "basic": 2.4
+    },
+    "motorcycleCet": {
+      "excellent": 1.8,
+      "good": 2.0,
+      "regular": 2.3,
+      "basic": 2.6
+    },
+    "riskSpread": {
+      "excellent": 0.1,
+      "good": 0.3,
+      "regular": 0.6,
+      "basic": 0.9
+    },
+    "fixedFees": {
+      "excellent": 100,
+      "good": 150,
+      "regular": 200,
+      "basic": 250
+    },
+    "registrationFee": 75,
+    "maxFinancing100": true,
+    "firstPaymentDelay": 45
+  },
+  "itau": {
+    "name": "Itaú",
+    "carRates": {
+      "excellent": 1.5,
+      "good": 1.7,
+      "regular": 2.0,
+      "basic": 2.3
+    },
+    "motorcycleRates": {
+      "excellent": 1.7,
+      "good": 1.9,
+      "regular": 2.2,
+      "basic": 2.5
+    },
+    "iof": 0.0041,
+    "adminFee": 0.003,
+    "carInsurance": 0.002,
+    "motorcycleInsurance": 0.0017,
+    "carCet": {
+      "excellent": 1.9,
+      "good": 2.1,
+      "regular": 2.4,
+      "basic": 2.7
+    },
+    "motorcycleCet": {
+      "excellent": 2.1,
+      "good": 2.3,
+      "regular": 2.6,
+      "basic": 2.9
+    },
+    "riskSpread": {
+      "excellent": 0.0,
+      "good": 0.1,
+      "regular": 0.3,
+      "basic": 0.5
+    },
+    "fixedFees": {
+      "excellent": 80,
+      "good": 120,
+      "regular": 160,
+      "basic": 200
+    },
+    "registrationFee": 60,
+    "paymentDeferral": 2,
+    "currentAccountDiscount": 0.2
+  },
+  "santander": {
+    "name": "Santander",
+    "carRates": {
+      "excellent": 1.3,
+      "good": 1.5,
+      "regular": 1.8,
+      "basic": 2.1
+    },
+    "motorcycleRates": {
+      "excellent": 1.5,
+      "good": 1.7,
+      "regular": 2.0,
+      "basic": 2.3
+    },
+    "iof": 0.0041,
+    "adminFee": 0.0028,
+    "carInsurance": 0.0019,
+    "motorcycleInsurance": 0.0016,
+    "carCet": {
+      "excellent": 1.7,
+      "good": 1.9,
+      "regular": 2.2,
+      "basic": 2.5
+    },
+    "motorcycleCet": {
+      "excellent": 1.9,
+      "good": 2.1,
+      "regular": 2.4,
+      "basic": 2.7
+    },
+    "riskSpread": {
+      "excellent": 0.0,
+      "good": 0.2,
+      "regular": 0.4,
+      "basic": 0.7
+    },
+    "fixedFees": {
+      "excellent": 120,
+      "good": 170,
+      "regular": 220,
+      "basic": 270
+    },
+    "registrationFee": 70,
+    "maxTerm": {
+      "car": 60,
+      "motorcycle": 48
+    }
+  }
+}

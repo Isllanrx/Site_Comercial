@@ -1,152 +1,93 @@
-# Paulo Veículos - Landing Page
+# Paulo Veículos - Portal de Vendas Automotivas
 
-Landing page moderna e responsiva para concessionária de veículos em Vila Velha, ES.
+Solução enterprise modular para a concessionária Paulo Veículos. O sistema foi reestruturado de um legado procedural para uma arquitetura moderna orientada a módulos e dados.
 
-## Características
+## 🏗️ Arquitetura do Sistema
 
-- **Design Responsivo**: Otimizado para desktop, tablet e mobile
-- **PWA Completo**: Service Worker, manifest.json, cache offline
-- **SEO Otimizado**: Meta tags, structured data, sitemap.xml
-- **Performance**: CSS/JS minificados, lazy loading, preload
-- **Acessibilidade**: ARIA labels, contraste WCAG AA
-- **Carrosséis**: Hero automático, depoimentos, Instagram
-- **Interatividade**: Contadores animados, countdown, smooth scroll
+O projeto adota uma abordagem de **Separação de Preocupações (SoC)**, onde a lógica de negócio, os dados e a interface do usuário são tratados de forma independente através de módulos ES6.
 
-## Estrutura do Projeto
+### Diagrama de Arquitetura
 
+```mermaid
+graph TD
+    UI[HTML Pages] --> Core[main.js]
+    
+    subgraph "Camada de Código (src)"
+        Core --> SIM[Simulator]
+        Core --> TEST[Testimonials]
+        Core --> INV[Inventory]
+        Core --> AUX[Helpers/Utils]
+    end
+    
+    subgraph "Camada de Dados (src/data)"
+        SIM --> BANK_DATA[bank-configs.json]
+        TEST --> TEST_DATA[testimonials.json]
+        INV --> INV_DATA[inventory.json]
+    end
+    
+    subgraph "Recursos Estáticos (assets)"
+        UI --> IMG[assets/img]
+        SIM --> IMG
+    end
+    
+    subgraph "PWA & Cache"
+        Core --> SW[Service Worker]
+        SW --> CACHE[(Browser Cache)]
+    end
 ```
-Landing_page/
+
+## 🚀 Tecnologias e Padrões
+
+- **Engine**: Vanilla JavaScript (ES6+ Modules)
+- **Styling**: Modular CSS (Layout, Components, Variables) em `src/css/`
+- **Data Layer**: Fetch API + JSON Storage em `src/data/`
+- **Assets**: Organizados em `assets/img/`
+- **Offline First**: Service Worker + Web Manifest
+- **DevOps**: ESLint, Prettier, Vercel Build Scripts
+
+## 📂 Estrutura de Diretórios
+
+```text
 ├── assets/
-│   ├── css/           # CSS minificado
-│   ├── js/            # JavaScript modular
-│   └── Atores/        # Imagens de avatares
-├── Imagens/           # Imagens otimizadas
-├── index.html         # Página principal
-├── sw.js             # Service Worker
-├── manifest.json     # PWA manifest
-├── sitemap.xml       # SEO sitemap
-└── robots.txt        # SEO robots
+│   └── img/            # Ativos visuais (veículos, atores, logos)
+├── src/                # Código fonte e dados
+│   ├── css/            # Arquitetura de estilos modular
+│   │   └── pages/      # CSS específico por rota
+│   ├── data/           # Repositório de dados estáticos (JSON)
+│   ├── js/             
+│   │   ├── modules/    # Lógica de negócio encapsulada
+│   │   ├── utils/      # Utilitários, Polyfills e Registro de SW
+│   │   └── main.js     # Orquestrador da aplicação
+│   └── fonts/          # Fontes locais
+├── index.html          # Ponto de entrada (Landing Page)
+└── simulador-financiamento.html # Módulo de simulação financeira
 ```
 
-## Tecnologias
+## 🛠️ Configuração de Desenvolvimento
 
-- **HTML5**: Semântico e acessível
-- **CSS3**: Variáveis, Grid, Flexbox, animações
-- **JavaScript ES6+**: Módulos, async/await, classes
-- **PWA**: Service Worker, manifest, cache
-- **SEO**: Meta tags, JSON-LD, sitemap
+Para executar o projeto localmente:
 
-## Instalação
+1. Instale as ferramentas de suporte:
+   ```bash
+   npm install
+   ```
 
-1. Clone o repositório
-2. Abra `index.html` no navegador
-3. Para desenvolvimento local, use um servidor HTTP
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
 
-## Funcionalidades
+3. Valide o padrão de código:
+   ```bash
+   npm run validate
+   ```
 
-### Hero Section
-- Carrossel automático com 3 slides
-- Botões CTA: "Ver Ofertas" e "Simular Financiamento"
-- Indicadores de navegação
-- Suporte a touch/swipe
+## 📈 Melhorias Estratégicas
 
-### Sobre Nós
-- Estatísticas animadas (12+ anos, 500+ carros, 98% satisfação)
-- Texto institucional otimizado
-- Ícones e métricas visuais
+1. **Organização Industrial**: Separação clara entre código fonte (`src/`) e recursos estáticos (`assets/`).
+2. **Desacoplamento de Dados**: Migração de arrays hardcoded para arquivos JSON externos.
+3. **Ciclo de Vida de Módulos**: Inicialização gerenciada por orquestrador centralizado.
+4. **Redução de Payload**: Centralização de scripts e estilos, reduzindo código inline.
 
-### Carros em Destaque
-- Grid responsivo (3 colunas desktop, 2 tablet, 1 mobile)
-- Simulação de posts do Instagram
-- Botão "Ver mais no Instagram"
-- Hover effects e transições
-
-### Ofertas Especiais
-- Cards com countdown timer
-- Preços destacados
-- CTAs para WhatsApp
-- Design com gradiente escuro
-
-### Depoimentos
-- Carrossel com 50+ depoimentos
-- Avatares reais de clientes
-- Datas aleatórias (2015-2025)
-- Auto-play e navegação manual
-
-### Como Funciona
-- Timeline horizontal (desktop) e vertical (mobile)
-- 3 passos do processo de compra
-- Ícones ilustrativos
-- CTA final
-
-### Footer
-- Mapa do Google integrado
-- Informações de contato
-- Redes sociais (Instagram, WhatsApp)
-- CTA final para conversão
-
-## Performance
-
-- **CSS Minificado**: 4 arquivos otimizados
-- **Lazy Loading**: Imagens carregadas sob demanda
-- **Preload**: Recursos críticos carregados primeiro
-- **Cache**: Service Worker para cache offline
-- **WebP**: Imagens otimizadas
-
-## SEO
-
-- **Meta Tags**: Title, description, keywords otimizados
-- **Open Graph**: Facebook e Twitter cards
-- **JSON-LD**: Structured data para AutoDealer
-- **Sitemap**: Todas as seções mapeadas
-- **Robots**: Configuração para crawlers
-
-## Acessibilidade
-
-- **ARIA Labels**: Navegação e carrosséis.
-- **Contraste**: WCAG AA compliant
-- **Semântica**: HTML5 semântico
-- **Navegação**: Teclado e screen readers
-
-## Responsividade
-
-- **Mobile First**: Design otimizado para mobile
-- **Breakpoints**: 374px, 767px, 1023px, 1024px+
-- **Touch**: Gestos de swipe e toque
-- **Flexbox/Grid**: Layouts responsivos
-
-## PWA
-
-- **Service Worker**: Cache offline
-- **Manifest**: Instalação como app
-- **Icons**: Ícones para diferentes tamanhos
-- **Offline**: Funcionamento sem internet
-
-## Desenvolvimento
-
-### Estrutura Modular
-- **CSS**: 4 arquivos especializados
-- **JS**: 10 módulos + utils
-- **Imagens**: Organizadas por categoria
-
-### Debug
-- Logs detalhados em console
-- Métodos de teste em cada módulo
-- Error handling completo
-
-## Deploy
-
-1. Upload dos arquivos para servidor
-2. Configurar HTTPS (obrigatório para PWA)
-3. Verificar Service Worker
-4. Testar em diferentes dispositivos
-
-## Suporte
-
-- **Navegadores**: Chrome, Firefox, Safari, Edge
-- **Dispositivos**: Desktop, tablet, mobile
-- **Resoluções**: 320px a 1920px+
-
-## Licença
-
-Projeto proprietário - Paulo Veículos
+---
+© 2024 Paulo Veículos. Desenvolvido com foco em escalabilidade e performance.

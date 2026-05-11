@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Maria Silva",
+    "rating": 5,
+    "text": "Nossa, que experiência incrível! Estava com medo de comprar carro usado, mas o Paulo me tranquilizou desde o primeiro contato. Meu Honda City está perfeito, nem parece que tem 4 anos.",
+    "date": "15 de Março, 2024",
+    "avatar": "/assets/img/Atores/Mulheres/maria_fernandes_lima.jpg"
+  },
+  {
+    "name": "João Santos",
+    "rating": 5,
+    "text": "Cara, não acreditei quando o financiamento foi aprovado em 2 dias! Outros lugares demoravam semanas. O Paulo me ajudou com toda a papelada e ainda conseguiu um desconto na entrada.",
+    "date": "10 de Fevereiro, 2024",
+    "avatar": "/assets/img/Atores/Homens/joao_alves_rocha.jpg"
+  },
+  {
+    "name": "Ana Costa",
+    "rating": 5,
+    "text": "Estava procurando carro há meses e sempre desconfiada. Quando cheguei aqui, o Paulo me mostrou tudo certinho, até o histórico do carro. Recomendo!",
+    "date": "22 de Janeiro, 2024",
+    "avatar": "/assets/img/Atores/Mulheres/ana_souza_lima.jpg"
+  },
+  {
+    "name": "Carlos Oliveira",
+    "rating": 5,
+    "text": "Meu Fox tá rodando que é uma beleza! Comprei há 2 anos e nunca deu problema. O Paulo é gente boa demais, sempre que passo na rua ele me cumprimenta.",
+    "date": "05 de Dezembro, 2023",
+    "avatar": "/assets/img/Atores/Homens/carlos_oliveira_santos.jpg"
+  },
+  {
+    "name": "Fernanda Lima",
+    "rating": 5,
+    "text": "Primeira vez comprando carro e estava super nervosa. O Paulo foi muito paciente, explicou tudo direitinho e ainda me deu dicas de como cuidar do carro. Meu Clio tá lindo!",
+    "date": "18 de Novembro, 2023",
+    "avatar": "/assets/img/Atores/Mulheres/fernanda_duarte_freitas.jpg"
+  }
+]

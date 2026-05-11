@@ -41,8 +41,8 @@ export const CLASSES = {
 };
 
 export const TIMING = {
-  heroCarouselInterval: 3000, // Reduzido para 3 segundos para teste
-  testimonialCarouselInterval: 8000, // Aumentado para 8 segundos para ver melhor os atores
+  heroCarouselInterval: 3000,
+  testimonialCarouselInterval: 8000,
   counterAnimationDuration: 2000,
   scrollDebounceDelay: 100,
   initDelay: 100,

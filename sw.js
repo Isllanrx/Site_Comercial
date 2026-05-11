@@ -1,27 +1,34 @@
-const CACHE_NAME = 'paulo-veiculos-v1.0.3';
+const CACHE_NAME = 'paulo-veiculos-v1.1.0';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/assets/css/variables.css',
-  '/assets/css/base.css',
-  '/assets/css/components.css',
-  '/assets/css/layout.css',
-  '/assets/css/responsive.css',
-  '/assets/js/main.js',
-  '/assets/js/utils/constants.js',
-  '/assets/js/utils/helpers.js',
-  '/assets/js/modules/hero.js',
-  '/assets/js/modules/navigation.js',
-  '/assets/js/modules/testimonials.js',
-  '/assets/js/modules/counters.js',
-  '/assets/js/modules/instagram.js',
-  '/assets/js/modules/countdown.js',
-  '/assets/js/modules/scroll-effects.js',
-  '/assets/js/modules/image-fallback.js',
-  '/assets/js/modules/online-counter.js',
-  '/assets/js/modules/smooth-scroll.js',
-  '/Imagens/logo.webp',
-  '/Imagens/carros-esportivos-cor-e-unidade.webp',
+  '/src/css/variables.css',
+  '/src/css/base.css',
+  '/src/css/components.css',
+  '/src/css/layout.css',
+  '/src/css/responsive.css',
+  '/src/js/main.js',
+  '/src/js/utils/constants.js',
+  '/src/js/utils/helpers.js',
+  '/src/js/modules/hero.js',
+  '/src/js/modules/navigation.js',
+  '/src/js/modules/testimonials.js',
+  '/src/js/modules/counters.js',
+  '/src/js/modules/instagram.js',
+  '/src/js/modules/countdown.js',
+  '/src/js/modules/scroll-effects.js',
+  '/src/js/modules/image-fallback.js',
+  '/src/js/modules/online-counter.js',
+  '/src/js/modules/smooth-scroll.js',
+  '/src/js/modules/simulator.js',
+  '/src/js/utils/polyfills.js',
+  '/src/js/utils/sw-register.js',
+  '/src/data/testimonials.json',
+  '/src/data/inventory.json',
+  '/src/data/bank-configs.json',
+  '/src/css/pages/simulator.css',
+  '/assets/img/logo.webp',
+  '/assets/img/carros-esportivos-cor-e-unidade.webp',
   '/manifest.json',
   '/sitemap.xml',
   '/robots.txt'
@@ -37,7 +44,6 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
-  // Skip caching for external resources and API calls
   if (event.request.url.includes('fonts.googleapis.com') || 
       event.request.url.includes('cdnjs.cloudflare.com') ||
       event.request.url.includes('api.') ||
@@ -52,16 +58,11 @@ self.addEventListener('fetch', event => {
           return response;
         }
         
-        // Try to fetch from network
         return fetch(event.request).catch(error => {
           console.warn('Network request failed:', event.request.url, error);
-          
-          // For navigation requests, return a fallback page
           if (event.request.mode === 'navigate') {
             return caches.match('/index.html');
           }
-          
-          // For other requests, return a basic response
           return new Response('Recurso não disponível offline', {
             status: 503,
             statusText: 'Service Unavailable',

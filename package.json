@@ -1,0 +1,25 @@
+{
+  "name": "site-comercial-paulo-veiculos",
+  "version": "1.1.0",
+  "description": "Site comercial para Paulo Veículos - Revenda de automóveis",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "npx serve .",
+    "lint": "eslint src/js",
+    "format": "prettier --write .",
+    "validate": "npm run lint && npx prettier --check ."
+  },
+  "keywords": [
+    "revenda",
+    "carros",
+    "pwa",
+    "vanilla-js"
+  ],
+  "author": "Paulo Veículos",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "serve": "^14.2.1"
+  }
+}
