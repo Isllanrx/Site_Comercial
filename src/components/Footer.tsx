@@ -50,9 +50,6 @@ export const Footer = () => {
               <Phone className="text-accent shrink-0" size={24} />
               <span>(27) 99735-6397</span>
             </li>
-            <li className="flex gap-4">
-              <Mail className="text-accent shrink-0" size={24} />
-            </li>
           </ul>
         </div>
 
