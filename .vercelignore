@@ -1,9 +1,0 @@
-# Arquivos que não devem ser deployados
-node_modules/
-.git/
-.gitignore
-README.md
-*.log
-.DS_Store
-Thumbs.db
-vercel-build.sh

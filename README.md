@@ -1,93 +1,76 @@
-# Paulo Veículos - Portal de Vendas Automotivas
+# Paulo Veículos | Premium React Experience
 
-Solução enterprise modular para a concessionária Paulo Veículos. O sistema foi reestruturado de um legado procedural para uma arquitetura moderna orientada a módulos e dados.
+Plataforma de revenda de automóveis modernizada para **React 18**, **TypeScript** e **Tailwind CSS**. O sistema oferece uma experiência de usuário premium com design Clean & Modern, animações fluidas e um simulador financeiro de alta precisão.
 
-## 🏗️ Arquitetura do Sistema
+## 🏗️ Arquitetura React
 
-O projeto adota uma abordagem de **Separação de Preocupações (SoC)**, onde a lógica de negócio, os dados e a interface do usuário são tratados de forma independente através de módulos ES6.
-
-### Diagrama de Arquitetura
+O projeto utiliza uma estrutura modular baseada em **Features**, facilitando a manutenção e escalabilidade.
 
 ```mermaid
 graph TD
-    UI[HTML Pages] --> Core[main.js]
-    
-    subgraph "Camada de Código (src)"
-        Core --> SIM[Simulator]
-        Core --> TEST[Testimonials]
-        Core --> INV[Inventory]
-        Core --> AUX[Helpers/Utils]
+    App[App.tsx] --> Nav[Navbar]
+    App --> Hero[Hero Feature]
+    App --> Inv[Inventory Feature]
+    App --> Sim[Simulator Feature]
+    App --> Test[Testimonials Feature]
+    App --> Foot[Footer]
+
+    subgraph "Camada de Lógica & Dados"
+        Sim --> useSim[useSimulator Hook]
+        Inv --> DataSvc[DataService]
+        useSim --> DataSvc
     end
-    
-    subgraph "Camada de Dados (src/data)"
-        SIM --> BANK_DATA[bank-configs.json]
-        TEST --> TEST_DATA[testimonials.json]
-        INV --> INV_DATA[inventory.json]
-    end
-    
-    subgraph "Recursos Estáticos (assets)"
-        UI --> IMG[assets/img]
-        SIM --> IMG
-    end
-    
-    subgraph "PWA & Cache"
-        Core --> SW[Service Worker]
-        SW --> CACHE[(Browser Cache)]
+
+    subgraph "Fontes de Dados"
+        DataSvc --> JSON[(JSON Storage)]
     end
 ```
 
-## 🚀 Tecnologias e Padrões
+## 🚀 Tecnologias Core
 
-- **Engine**: Vanilla JavaScript (ES6+ Modules)
-- **Styling**: Modular CSS (Layout, Components, Variables) em `src/css/`
-- **Data Layer**: Fetch API + JSON Storage em `src/data/`
-- **Assets**: Organizados em `assets/img/`
-- **Offline First**: Service Worker + Web Manifest
-- **DevOps**: ESLint, Prettier, Vercel Build Scripts
+- **Frontend**: React 18 + Vite
+- **Tipagem**: TypeScript
+- **Estilização**: Tailwind CSS (Design System Customizado)
+- **Animações**: Framer Motion (Micro-interações e Reveals)
+- **Ícones**: Lucide React
+- **PWA**: Suporte para instalação e modo offline
 
 ## 📂 Estrutura de Diretórios
 
 ```text
-├── assets/
-│   └── img/            # Ativos visuais (veículos, atores, logos)
-├── src/                # Código fonte e dados
-│   ├── css/            # Arquitetura de estilos modular
-│   │   └── pages/      # CSS específico por rota
-│   ├── data/           # Repositório de dados estáticos (JSON)
-│   ├── js/             
-│   │   ├── modules/    # Lógica de negócio encapsulada
-│   │   ├── utils/      # Utilitários, Polyfills e Registro de SW
-│   │   └── main.js     # Orquestrador da aplicação
-│   └── fonts/          # Fontes locais
-├── index.html          # Ponto de entrada (Landing Page)
-└── simulador-financiamento.html # Módulo de simulação financeira
+src/
+├── components/         # Componentes globais de UI (Navbar, Footer)
+├── features/           # Módulos de negócio isolados (Hero, Inventory, Simulator)
+├── hooks/              # Custom hooks para lógica compartilhada
+├── services/           # Camada de comunicação com dados (DataService)
+├── data/               # Repositório de dados JSON
+├── styles/             # Configurações globais de Tailwind
+└── App.tsx             # Orquestrador da SPA
 ```
 
-## 🛠️ Configuração de Desenvolvimento
+## 🛠️ Como Executar
 
-Para executar o projeto localmente:
-
-1. Instale as ferramentas de suporte:
+1. Instale as dependências:
    ```bash
    npm install
    ```
 
-2. Inicie o servidor de desenvolvimento:
+2. Inicie o ambiente de desenvolvimento:
    ```bash
-   npm start
+   npm run dev
    ```
 
-3. Valide o padrão de código:
+3. Para build de produção:
    ```bash
-   npm run validate
+   npm run build
    ```
 
-## 📈 Melhorias Estratégicas
+## 📈 Diferenciais da Versão React
 
-1. **Organização Industrial**: Separação clara entre código fonte (`src/`) e recursos estáticos (`assets/`).
-2. **Desacoplamento de Dados**: Migração de arrays hardcoded para arquivos JSON externos.
-3. **Ciclo de Vida de Módulos**: Inicialização gerenciada por orquestrador centralizado.
-4. **Redução de Payload**: Centralização de scripts e estilos, reduzindo código inline.
+1. **Simulador em Tempo Real**: Cálculos reativos processados instantaneamente com feedback visual.
+2. **Mobile First Premium**: Interface otimizada para toque (swipe no carrossel) e 100% responsiva para iOS/Android.
+3. **Performance Extrema**: Carregamento otimizado de imagens e bundle reduzido via Vite.
+4. **Segurança de Tipos**: Lógica financeira blindada com interfaces TypeScript.
 
 ---
-© 2024 Paulo Veículos. Desenvolvido com foco em escalabilidade e performance.
+© 2024 Paulo Veículos. Redefinindo a experiência de compra de seminovos.
