@@ -18,11 +18,15 @@ export const Footer = () => {
             Sua confiança é o nosso maior patrimônio.
           </p>
           <div className="flex gap-4">
-            {[Instagram, MessageCircle, Mail].map((Icon, i) => (
-              <a key={i} href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all">
-                <Icon size={20} />
-              </a>
-            ))}
+            <a href="https://www.instagram.com/pauloveiculos027/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all">
+              <Instagram size={20} />
+            </a>
+            <a href="https://wa.me/5527997356397" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all">
+              <MessageCircle size={20} />
+            </a>
+            <a href="mailto:contato@pauloveiculos.com.br" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all">
+              <Mail size={20} />
+            </a>
           </div>
         </div>
 

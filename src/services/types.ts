@@ -3,6 +3,7 @@ export interface Vehicle {
   image: string;
   caption: string;
   badge: string;
+  instagramUrl: string;
 }
 
 export interface Testimonial {
