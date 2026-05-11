@@ -59,19 +59,20 @@ export const InstagramMirror: React.FC<InstagramMirrorProps> = ({ vehicles }) =>
           </div>
 
           <div className="hidden md:flex gap-10">
-            <div><span className="font-bold">{vehicles.length}</span> publicações</div>
-            <div><span className="font-bold">12.5k</span> seguidores</div>
-            <div><span className="font-bold">850</span> seguindo</div>
+            <div><span className="font-bold">30</span> publicações</div>
+            <div><span className="font-bold">1.764</span> seguidores</div>
+            <div><span className="font-bold">139</span> seguindo</div>
           </div>
 
           <div className="space-y-1">
-            <h2 className="font-bold text-sm">Paulo Veículos | Seminovos Premium</h2>
+            <h2 className="font-bold text-sm">Paulo Veiculos</h2>
+            <p className="text-gray-500 text-sm font-medium">Carros</p>
             <p className="text-sm whitespace-pre-line leading-snug">
-              🚗 Compra • Venda • Troca • Financia{"\n"}
-              🏆 12 Anos de Tradição em Vila Velha - ES{"\n"}
-              ✅ Procedência e Qualidade Garantida{"\n"}
-              👇 Simule agora no link abaixo!{"\n"}
-              <a href="#" className="text-[#00376b] font-bold">paulo-veiculos.vercel.app</a>
+              🏠 Alvorada - Vila Velha/ES{"\n"}
+              🚗 + de 20 anos no mercado!{"\n"}
+              💰 Financiamento fácil com o Banco Pan e BV!{"\n"}
+              📈 A melhor qualidade em veículos novos e seminovos!{"\n"}
+              N° 250, Alvorada, Vila Velha, Brazil 29117390
             </p>
           </div>
         </div>
@@ -80,15 +81,15 @@ export const InstagramMirror: React.FC<InstagramMirrorProps> = ({ vehicles }) =>
       {/* Mobile Stats Mock */}
       <div className="md:hidden flex justify-around py-3 border-b border-gray-200 text-center text-sm">
         <div className="flex flex-col">
-          <span className="font-bold">{vehicles.length}</span>
+          <span className="font-bold">30</span>
           <span className="text-gray-500">publicações</span>
         </div>
         <div className="flex flex-col">
-          <span className="font-bold">12.5k</span>
+          <span className="font-bold">1.764</span>
           <span className="text-gray-500">seguidores</span>
         </div>
         <div className="flex flex-col">
-          <span className="font-bold">850</span>
+          <span className="font-bold">139</span>
           <span className="text-gray-500">seguindo</span>
         </div>
       </div>
