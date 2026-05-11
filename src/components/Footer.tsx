@@ -52,7 +52,6 @@ export const Footer = () => {
             </li>
             <li className="flex gap-4">
               <Mail className="text-accent shrink-0" size={24} />
-              <span>contato@pauloveiculos.com.br</span>
             </li>
           </ul>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './features/hero/Hero';
+import { About } from './features/about/About';
 import { Inventory } from './features/inventory/Inventory';
 import { Simulator } from './features/simulator/Simulator';
 import { Testimonials } from './features/testimonials/Testimonials';
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         <Inventory />
         <Simulator />
         <Testimonials />

@@ -1,14 +1,15 @@
 import React from 'react';
-import { Menu, X, Car, Calculator, Instagram, MessageCircle } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const menuItems = [
     { name: 'Home', href: '#' },
+    { name: 'Sobre', href: '#about' },
     { name: 'Estoque', href: '#inventory' },
-    { name: 'Simulador', href: '#simulator' },
     { name: 'Depoimentos', href: '#testimonials' },
+    { name: 'Simulador', href: '#simulator' },
   ];
 
   return (
@@ -39,7 +40,7 @@ export const Navbar = () => {
             className="bg-secondary text-primary px-5 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 hover:bg-accent hover:text-secondary transition-all shadow-md"
           >
             <MessageCircle size={18} />
-            Contato
+            WhatsApp
           </a>
         </div>
 
