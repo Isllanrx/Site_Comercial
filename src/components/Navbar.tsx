@@ -63,10 +63,16 @@ export const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <button className="bg-accent text-secondary w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 mt-2">
+          <a
+            href="https://wa.me/5527997356397"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="bg-accent text-secondary w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 mt-2"
+          >
             <MessageCircle size={20} />
             Falar no WhatsApp
-          </button>
+          </a>
         </div>
       )}
     </nav>

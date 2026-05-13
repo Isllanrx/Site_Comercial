@@ -24,7 +24,7 @@ export const Footer = () => {
             <a href="https://wa.me/5527997356397" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all">
               <MessageCircle size={20} />
             </a>
-            <a href="mailto:contato@pauloveiculos.com.br" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all">
+            <a href="mailto:paulospereira78@yahoo.com.br" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:text-secondary transition-all">
               <Mail size={20} />
             </a>
           </div>
